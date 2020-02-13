@@ -1,0 +1,166 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+
+body {
+  font-family: "Avenir Next", "AvenirNext", "Helvetica Neue", Helvetica,
+    sans-serif;
+}
+
+/********************************/
+/* TOP NAVIGATION BAR
+/********************************/
+.fixedHeaderContainer {
+  background-color: $secondaryColor;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.fixedHeaderContainer header .headerTitleWithLogo {
+  display: none;
+}
+
+.navigationSlider .slidingNav ul li {
+  background-color: $navSliderBackground;
+}
+
+.navigationSlider .slidingNav ul li a {
+  color: black;
+}
+
+.navigationSlider .slidingNav ul li.siteNavItemActive > a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+  background-color: $navSliderBackground;
+  color: black;
+  font-weight: 700;
+}
+
+.navigationSlider .slidingNav ul li a:hover,
+.navigationSlider .slidingNav ul li > a:focus,
+.navigationSlider .slidingNav ul li > a:hover {
+  background-color: $navSliderBackground;
+  color: #0d6c9b;
+}
+
+/********************************/
+/* MAIN DOCUMENT
+/********************************/
+.docsContainer > .wrapper {
+  margin-top: 80px;
+}
+
+.homeContainer {
+  margin-top: 80px;
+}
+
+/* CODE */
+code.language-tile38-cli {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background: #272822;
+  font-size: 14px;
+
+  color: #f8f8f2;
+  display: block;
+  overflow-x: auto;
+  padding: 18px 22px;
+  /* white-space: pre-wrap; */
+}
+
+code.language-tile38-cli .hljs-command {
+  color: #a6e22e;
+}
+code.language-tile38-cli .hljs-number,
+code.language-tile38-cli .hljs-neg-number {
+  color: #66d9ef;
+}
+
+code.language-tile38-cli .hljs-comment {
+  color: #75715e;
+}
+code.language-tile38-cli .hljs-geojson {
+  color: #e6db74;
+}
+
+/********************************/
+/* FOOTER
+/********************************/
+.nav-footer {
+  margin-top: 80px;
+}
+
+.nav-footer .sitemap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 3em;
+  width: 100%;
+}
+
+.nav-footer .copyright {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .fixedHeaderContainer {
+    height: 80px;
+    padding-top: 25px;
+  }
+
+  .docsNavContainer {
+    margin-top: 80px;
+    position: static;
+    overflow-y: visible;
+  }
+
+  .onPageNav {
+    margin-top: 120px;
+  }
+
+  .documentContainer > .wrapper {
+    margin-top: 80px;
+  }
+
+  /* GET TILE38 BUTTON */
+  .navigationSlider .slidingNav ul li a.tile38NavButton {
+    padding: 20px 16px;
+    top: -5px;
+    margin-left: 8px;
+    position: relative;
+    border-radius: 6px;
+    color: default;
+    background: default;
+    color: initial;
+    background: initial;
+    border: 1px solid #0d6c9b;
+  }
+
+  .navigationSlider .slidingNav ul li a.tile38NavButton:hover,
+  .navigationSlider .slidingNav ul li > a.tile38NavButton:focus,
+  .navigationSlider .slidingNav ul li > a.tile38NavButton:hover {
+    color: white;
+    background: #0d6c9b;
+    transition: 0.4s;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .documentContainer > .wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
