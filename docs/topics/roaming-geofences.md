@@ -4,12 +4,7 @@ title: Roaming Geofences
 sidebar_label: Roaming Geofences
 ---
 
-<!--
-layout:  index.html
-title:   Roaming Geofences - Tile38
-class:   topic
-super:   documentation
--->
+
 
 <img src="/img/roaming.gif" width="225" height="225" border="0" alt="Roaming Geofence animation" align="right" style="margin-left: 10px" class="side-img">
 
@@ -25,7 +20,7 @@ A couple of common use cases are:
 
 A simple example:
 
-```tile38
+```tile38-cli
 NEARBY people FENCE ROAM people * 5000
 ```
 
@@ -55,20 +50,20 @@ localhost:9851> SET people alice POINT 33.02 -115.02
 
 The event will appear in terminal 1 and look like:
 
-```tile38-json
+```json
 {
-    "command":"set",
-    "detect":"roam",
-    "hook":"",
-    "key":"people",
-    "id":"alice",
-    "time":"2016-05-24T09:19:44.08649461-07:00",
-    "object":{"type":"Point","coordinates":[-115.02,33.02]},
-    "nearby":{
-        "key":"people",
-        "id":"bob",
-        "meters":1451.138152186708
-    }
+  "command": "set",
+  "detect": "roam",
+  "hook": "",
+  "key": "people",
+  "id": "alice",
+  "time": "2016-05-24T09:19:44.08649461-07:00",
+  "object": { "type": "Point", "coordinates": [-115.02, 33.02] },
+  "nearby": {
+    "key": "people",
+    "id": "bob",
+    "meters": 1451.138152186708
+  }
 }
 ```
 
@@ -89,7 +84,7 @@ And if you are using [webhooks](/commands/sethook) you can assign this fence lik
 SETHOOK myhook http://10.0.1.5/hook NEARBY people FENCE ROAM people * 5000
 ```
 
-### NODWELL Keyword
+## NODWELL Keyword
 
 One side effect is that you may get a lot of nearby notifications when two
 objects continue to be nearby each other. If this is a problem then use the

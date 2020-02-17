@@ -4,12 +4,7 @@ title: Command Line Interface
 sidebar_label: Command Line Interface
 ---
 
-<!--
-layout:  index.html
-title:   Command Line Interface - Tile38
-class:   topic
-super:   documentation
--->
+
 
 When you [build](/#building) the `tile38-server` executable binary, an accompanied `tile38-cli` executable binary will also be built.
 
