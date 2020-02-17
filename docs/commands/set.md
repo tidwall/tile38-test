@@ -6,7 +6,7 @@ sidebar_label: SET
 
 ## Full Syntax
 
-SET key id FIELD EX type value
+**SET  key id [FIELD name value ...] [EX seconds] [NX|XX] (OBJECT geojson)|(POINT lat lon z)|(BOUNDS minlat minlon maxlat maxlon)|(HASH geohash)|(STRING value)**
 
 ---
 

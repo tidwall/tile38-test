@@ -27,12 +27,12 @@ $ ./tile38-cli
 # crud operations
 > GET fleet truck1                           # returns 'truck1'
 > DEL fleet truck2                           # deletes 'truck2'
-> DROP fleet                                 # removes all 
+> DROP fleet                                 # removes all
 ```
 
 All of the standard [commands](/commands) are supported. For inline help use the `help` command:
 
-```tile38-cli
+```plaintext
 $ ./tile38-cli
 
 > help
@@ -46,7 +46,7 @@ Type: "help @<group>" to get a list of commands in <group>
 
 ## Arguments
 
-```tile38-cli
+```plaintext
 $ ./tile38-cli -h
 
 tile38-cli 1.0.4
@@ -55,4 +55,3 @@ Usage: tile38-cli [OPTIONS] [cmd [arg [arg ...]]]
  -h <hostname>      Server hostname (default: 127.0.0.1).
  -p <port>          Server port (default: 9851).
 ```
-

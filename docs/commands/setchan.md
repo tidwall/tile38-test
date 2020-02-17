@@ -6,7 +6,7 @@ sidebar_label: SETCHAN
 
 ## Full Syntax
 
-SETCHAN name META EX key FENCE DETECT COMMANDS param
+**SETCHAN  name [META name value ...] [EX seconds] NEARBY|WITHIN|INTERSECTS key FENCE [DETECT what] [COMMANDS which] param [param...]**
 
 ---
 

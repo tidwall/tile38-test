@@ -7,14 +7,14 @@ const commands = JSON.parse(rawdata);
 for (command of Object.keys(commands)) {
   const argsObj = commands[command].arguments;
   let argsString = command;
-  console.log(colors.magenta(argsString));
+  // console.log(colors.magenta(argsString));
   if (argsObj) {
     argsObj.forEach(arg => {
       argsString += " " + getArgs(arg);
     });
   }
-  console.log(argsString);
-  console.log("");
+  // console.log(argsString);
+  // console.log("");
 }
 
 function getArgs(a) {

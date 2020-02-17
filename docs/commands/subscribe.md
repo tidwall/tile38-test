@@ -6,7 +6,7 @@ sidebar_label: SUBSCRIBE
 
 ## Full Syntax
 
-SUBSCRIBE channel
+**SUBSCRIBE  channel [channel...]**
 
 ---
 

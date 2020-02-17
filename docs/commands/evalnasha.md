@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-EVALNASHA sha1 numkeys key arg
+**EVALNASHA  sha1 numkeys [key ...] [arg ...]**
 
 ---
 

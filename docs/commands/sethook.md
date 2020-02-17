@@ -6,7 +6,7 @@ sidebar_label: SETHOOK
 
 ## Full Syntax
 
-SETHOOK name endpoint META EX key FENCE DETECT COMMANDS param
+**SETHOOK  name endpoint [META name value ...] [EX seconds] NEARBY|WITHIN|INTERSECTS key FENCE [DETECT what] [COMMANDS which] param [param...]**
 
 ---
 

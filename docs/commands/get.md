@@ -6,7 +6,7 @@ sidebar_label: GET
 
 ## Full Syntax
 
-GET key id WITHFIELDS type
+**GET  key id [WITHFIELDS] [OBJECT|POINT|BOUNDS|(HASH geohash)]**
 
 ---
 

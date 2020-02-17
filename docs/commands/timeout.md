@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-TIMEOUT seconds COMMAND arg
+**TIMEOUT  seconds COMMAND [arg  ...]**
 
 ---
 

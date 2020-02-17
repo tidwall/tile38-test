@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-EVAL script numkeys key arg
+**EVAL  script numkeys [key ...] [arg ...]**
 
 ---
 

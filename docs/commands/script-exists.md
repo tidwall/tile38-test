@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-SCRIPT EXISTS sha1
+**SCRIPT EXISTS  sha1 ...**
 
 ---
 
