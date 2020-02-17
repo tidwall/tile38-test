@@ -5,8 +5,6 @@ class:   topic
 super:   documentation
 -->
 
-# Command Line Interface
-
 When you [build](/#building) the `tile38-server` executable binary, an accompanied `tile38-cli` executable binary will also be built.
 
 ## Basic Operations

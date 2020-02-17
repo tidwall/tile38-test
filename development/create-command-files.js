@@ -1,5 +1,4 @@
 const fs = require("fs");
-const readline = require("readline");
 var colors = require("colors");
 
 const rawdata = fs.readFileSync("commands.json");

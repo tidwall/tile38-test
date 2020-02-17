@@ -5,8 +5,6 @@ class:   topic
 super:   download
 -->
 
-# Getting Started
-
 ## Docker
 
 ```plaintext

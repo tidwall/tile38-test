@@ -5,8 +5,6 @@ class:   topic
 super:   documentation
 -->
 
-# Roaming Geofences
-
 <img src="/img/roaming.gif" width="225" height="225" border="0" alt="Roaming Geofence animation" align="right" style="margin-left: 10px" class="side-img">
 
 Tile38 1.2 introduces a powerful new feature which allows for dynamic [geofences](/topics/geofencing). This enables realtime monitoring for when one or more moving objects are nearby each other.
@@ -85,7 +83,7 @@ And if you are using [webhooks](/commands/sethook) you can assign this fence lik
 SETHOOK myhook http://10.0.1.5/hook NEARBY people FENCE ROAM people * 5000
 ```
 
-### NODWELL Keyword
+## NODWELL Keyword
 
 One side effect is that you may get a lot of nearby notifications when two
 objects continue to be nearby each other. If this is a problem then use the
