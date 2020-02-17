@@ -97,7 +97,7 @@ const siteConfig = {
             },
             {
               className: "command",
-              begin: "\\s[A-Z]+\\b"
+              begin: "\\b[A-Z]+\\b"
             },
             {
               className: "geojson",
