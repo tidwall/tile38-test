@@ -27,7 +27,7 @@ All others commands will ignore the timeout set on the connection.
 
 ## Examples
 
-```tile38
+```tile38-cli
 
 > TIMEOUT 1 SCAN mykey WHERE foo 1 2 COUNT
 (integer) 1234

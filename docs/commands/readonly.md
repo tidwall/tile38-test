@@ -16,7 +16,7 @@ Puts the server into readonly mode. While in this mode all commands that change 
 
 ## Examples
 
-```tile38
+```tile38-cli
 READONLY yes    # turns on readonly mode
 READONLY no     # turns off readonly mode
 ```

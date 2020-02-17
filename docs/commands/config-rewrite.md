@@ -15,7 +15,7 @@ sidebar_label: __no_label
 The CONFIG REWRITE command is used to persist changes made by the [CONFIG SET](/commands/config-set) command.
 
 ## Examples
-```tile38
+```tile38-cli
 CONFIG REWRITE
 ```
 

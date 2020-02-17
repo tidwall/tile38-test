@@ -24,7 +24,7 @@ Supported [glob-style patterns](https://en.wikipedia.org/wiki/Glob_(programming)
 
 ## Examples
 
-```tile38
+```tile38-cli
 HOOKS *             # return all hooks
 HOOKS warehouse:*   # return all hooks that have the prefix with 'warehouse:'
 ```

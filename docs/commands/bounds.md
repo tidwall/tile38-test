@@ -16,7 +16,7 @@ Returns the minimum bounding rectangle for all objects in a key.
 
 ## Examples
 
-```tile38
+```tile38-cli
 BOUNDS fleet      # Returns the boundary for the fleet key
 ```
 

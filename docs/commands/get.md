@@ -28,7 +28,7 @@ Field values that are equal to zero are omitted.
 
 ## Examples
 
-```tile38
+```tile38-cli
 GET fleet truck1          # get geojson object 'truck1' from 'fleet'
 GET fleet truck1 OBJECT   # same as above
 GET fleet truck1 POINT    # get latitude, longitude point

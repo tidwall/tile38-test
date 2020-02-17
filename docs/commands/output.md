@@ -21,7 +21,7 @@ The default format is initially auto detected based on the connection type and t
 
 ## Examples
 
-```tile38
+```tile38-cli
 OUTPUT json          # all responses will now be in JSON format.
 OUTPUT resp          # all responses will now be in RESP format.
 ```

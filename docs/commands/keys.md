@@ -24,7 +24,7 @@ Supported [glob-style patterns](https://en.wikipedia.org/wiki/Glob_(programming)
 
 ## Examples
 
-```tile38
+```tile38-cli
 KEYS *         # return all keys
 KEYS fleet:*   # return all keys that have the prefix with 'fleet:'
 ```

@@ -15,7 +15,7 @@ sidebar_label: __no_label
 The CONFIG GET command is used to obtain config properties.
 
 ## Examples
-```tile38
+```tile38-cli
 CONFIG GET requirepass
 ```
 

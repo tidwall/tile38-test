@@ -16,13 +16,13 @@ The NEARBY command searches a collection for objects that are close to a specifi
 
 This command has many options, but at it's most simplest it may appear like:
 
-```tile38
+```tile38-cli
 NEARBY fleet LIMIT 1 POINT 33.462 -112.268
 ```
 to find the object closest to the given point.
 
 If the radius is given:
-```tile38
+```tile38-cli
 NEARBY fleet POINT 33.462 -112.268 6000
 ```
 then the search will be limited by that radius, in this case `6000` meters.

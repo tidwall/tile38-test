@@ -16,7 +16,7 @@ Show server stats and details.
 
 ## Examples
 
-```tile38
+```tile38-cli
 SERVER
 ```
 
@@ -39,7 +39,7 @@ The `stats` array will contain information about the server.
 - `read_only`: Is true when the server is in readonly mode.
 
 
-```tile38-json
+```json
 {
     "ok":true,
     "stats":{

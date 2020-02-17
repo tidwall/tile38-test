@@ -16,7 +16,7 @@ Set a timeout on an id.
 
 ## Examples
 
-```tile38
+```tile38-cli
 EXPIRE fleet truck 10
 ```
 

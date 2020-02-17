@@ -16,7 +16,7 @@ Remove a specified object.
 
 ## Examples
 
-```tile38
+```tile38-cli
 DEL fleet truck1
 ```
 

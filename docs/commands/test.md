@@ -14,13 +14,13 @@ sidebar_label: __no_label
 
 The TEST command performs tests on given objects, without searching through the data.
 
-```tile38
+```tile38-cli
 TEST a WITHIN b
 ```
 
 returns 1 if `a` is within `b`, and 0 otherwise.
 
-```tile38
+```tile38-cli
 TEST a INTERSECTS b
 ```
 
@@ -28,7 +28,7 @@ returns 1 if `a` intersects `b`, and 0 otherwise.
 
 In the examples above, both `a` and `b` can be any of these types: `POINT`, `GET`, `BOUNDS`, `OBJECT`, `CIRCLE`, `TILE`, `QUADKEY`, `HASH`.
 
-```tile38
+```tile38-cli
 TEST a INTERSECTS CLIP b
 ```
 

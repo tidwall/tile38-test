@@ -17,7 +17,7 @@ The shrink will only be triggered by Tile38 if there is not a shrink in process.
 
 ## Examples
 
-```tile38
+```tile38-cli
 AOFSHRINK
 ```
 

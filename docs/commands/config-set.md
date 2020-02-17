@@ -15,7 +15,7 @@ sidebar_label: __no_label
 The CONFIG SET command is used to set special configuration properties.  These properties will not persist until the [CONFIG REWRITE](/commands/config-rewrite) is called.
 
 ## Examples
-```tile38
+```tile38-cli
 CONFIG SET requirepass mypass   # set a password for the AUTH command.
 ```
 

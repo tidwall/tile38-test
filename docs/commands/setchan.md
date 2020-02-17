@@ -18,7 +18,7 @@ Creates a Pub/Sub channel which points to a [geofenced](/topics/geofencing) sear
 
 Set a simple channel.
 
-```tile38
+```tile38-cli
 SETCHAN warehouse NEARBY fleet FENCE POINT 33.5123 -112.2693 500
 ```
 

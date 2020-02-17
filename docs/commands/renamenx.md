@@ -20,7 +20,7 @@ Returns 1 if `key` was renamed to `newkey`, 0 if `newkey` already existed, or
 
 ## Examples
 
-```tile38
+```tile38-cli
 RENAMENX fleet fleet2
 ```
 

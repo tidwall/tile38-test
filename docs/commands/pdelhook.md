@@ -16,7 +16,7 @@ Removes all hooks that match the specified pattern.
 
 ## Examples
 
-```tile38
+```tile38-cli
 PDELHOOK *
 ```
 

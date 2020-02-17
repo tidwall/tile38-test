@@ -21,7 +21,7 @@ Return value is the integer count of how many fields actually changed their valu
 
 Set a field named `speed` to `16` and a field named `wheels` to 8 for `truck1`.
 
-```tile38
+```tile38-cli
 FSET fleet truck1 speed 16 wheels 8
 ```
 

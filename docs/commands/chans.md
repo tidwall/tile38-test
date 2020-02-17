@@ -24,7 +24,7 @@ Supported [glob-style patterns](https://en.wikipedia.org/wiki/Glob_(programming)
 
 ## Examples
 
-```tile38
+```tile38-cli
 CHANS *             # return all channels
 CHANS warehouse:*   # return all channels that have the prefix with 'warehouse:'
 ```
