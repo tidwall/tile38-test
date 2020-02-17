@@ -9,7 +9,7 @@ let categories = {
       "topics/object-types",
       "topics/command-line-interface",
       "topics/network-protocols",
-      "clients",
+      "topics/client-libraries",
       "topics/replication"
     ],
     Geofences: ["topics/geofencing", "topics/roaming-geofences"],

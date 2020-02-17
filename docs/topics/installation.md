@@ -4,16 +4,11 @@ title: Installation
 sidebar_label: Installation
 ---
 
-<!--
-layout:  index.html
-title:   Getting Started - Tile38
-class:   topic
-super:   download
--->
+
 
 ## Docker
 
-```tile38-cli
+```plaintext
 docker pull tile38/tile38
 docker run -p 9851:9851 tile38/tile38
 ```
@@ -22,20 +17,20 @@ Visit the [Tile38 Docker Hub Page](https://hub.docker.com/r/tile38/tile38/) for 
 
 ## Homebrew (macOS)
 
-```tile38-cli
+```plaintext
 brew install tile38
 tile38-server
 ```
 
 ## Packages (linux)
 
-```tile38-cli
+```plaintext
 pkg install tile38
 ```
 
 ## MacPorts (macOS)
 
-```tile38-cli
+```plaintext
 make -C /usr/ports/databases/tile38 install
 ```
 
@@ -47,7 +42,7 @@ Tile38 has pre-built release binaries for OSX, Linux, FreeBSD, and Windows. Inst
 
 If not already started, start the Tile38 with:
 
-```tile38-cli
+```plaintext
 tile38-server
 ```
 

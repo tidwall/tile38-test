@@ -4,12 +4,7 @@ title: Geofencing
 sidebar_label: Geofencing
 ---
 
-<!--
-layout:  index.html
-title:   Geofencing - Tile38
-class:   topic
-super:   documentation
--->
+
 
 <img src="/img/geofence.gif" width="200" height="200" border="0" alt="Geofence animation" align="right" style="margin-left: 10px" class="side-img">
 A [geofence](https://en.wikipedia.org/wiki/Geo-fence) is a virtual boundary that can detect when an object enters or exits the area. This boundary can be a radius or any [search area format](/commands/intersects#area-formats), such as a [bounding box](/topics/object-types#bounding-box), [GeoJSON](/topics/object-types#geojson) object, etc. Tile38 can turn any standard search into a geofence monitor by adding the FENCE keyword to the search. 
@@ -82,7 +77,7 @@ The **`detect`** may be one of the following values.
 By default **all** detect types and commands are returned.
 If you would like to only have a select few then use the `DETECT` option, for example:
 
-```tile38
+```tile38-cli
 SETCHAN warehouse NEARBY fleet FENCE DETECT inside,outside POINT 33.462 -112.268 6000
 ```
 
@@ -90,7 +85,7 @@ This command will only tell the fence that you only want **inside** and **outsid
 
 It's also possible to mask which commands are returned by using the `COMMANDS` option, for example:
 
-```tile38
+```tile38-cli
 SETCHAN warehouse NEARBY fleet FENCE DETECT enter COMMANDS set POINT 33.462 -112.268 6000
 ```
 

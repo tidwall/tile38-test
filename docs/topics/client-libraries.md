@@ -1,14 +1,10 @@
 ---
-id: clients
-title: Clients Libraries
-sidebar_label: Clients Libraries
+id: client-libraries
+title: Client Libraries
+sidebar_label: Client Libraries
 ---
 
-<!--
-layout: index.html
-title:  Clients - Tile38
-class:  clients
--->
+
 
 Tile38 uses the [Redis RESP](http://redis.io/topics/protocol) protocol natively. Therefore all clients that support basic Redis commands will in turn support Tile38. Below are a few of the popular clients. For a more complete list, please see the [Redis Clients](http://redis.io/clients) page.
 
