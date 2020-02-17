@@ -5,8 +5,6 @@ class:   topic
 super:   documentation
 -->
 
-# Replication
-
 Tile38 replication is a leader-follower model and is intended to be very easy to set up.
 
 ## Quick Tutorial
