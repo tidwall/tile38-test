@@ -16,7 +16,7 @@ Performs a checksum on a portion of the aof.
 
 ## Examples
 
-```tile38
+```tile38-cli
 AOFMD5 12236598 4096
 ```
 

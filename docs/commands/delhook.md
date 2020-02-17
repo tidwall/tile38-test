@@ -16,7 +16,7 @@ Remove a specified hook.
 
 ## Examples
 
-```tile38
+```tile38-cli
 DELHOOK warehouse
 ```
 

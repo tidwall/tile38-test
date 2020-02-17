@@ -16,7 +16,7 @@ Remove an existing timeout of an id.
 
 ## Examples
 
-```tile38
+```tile38-cli
 PERSIST fleet truck
 ```
 

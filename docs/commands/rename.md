@@ -20,7 +20,7 @@ used by a geofence or webhook.
 
 ## Examples
 
-```tile38
+```tile38-cli
 RENAME fleet fleet2
 ```
 

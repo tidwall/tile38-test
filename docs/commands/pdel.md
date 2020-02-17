@@ -16,7 +16,7 @@ Removes objects that match a specified pattern.
 
 ## Examples
 
-```tile38
+```tile38-cli
 PDEL fleet truck*
 ```
 

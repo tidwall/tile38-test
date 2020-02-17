@@ -16,7 +16,7 @@ Downloads the AOF starting from pos and keeps the connection alive.  All data th
 
 ## Examples
 
-```tile38
+```tile38-cli
 AOF 12236598
 ```
 

@@ -22,7 +22,7 @@ Following that, the next `numkeys` arguments are the tile38 keys that can be acc
 
 The keys and additional arguments are available from the script as global variables KEYS and ARGV, both are one-based arrays (Lua tables).  Specifically, they keys will be available in the script as KEYS[1], KEYS[2], ..., and the additional arguments will be available as ARGV[1], ARGV[2], ...
 
-```tile38
+```tile38-cli
 EVAL 'return {"Got keys", KEYS[1], KEYS[2], "Got args", ARGV[1]}' 2 fleet fleet2 drivers
 1) "Got keys"
 2) "fleet"
@@ -39,14 +39,14 @@ The Lua environment inside the Tile38 server defines two functions to call other
 The only difference between these two functions is how they handle the errors that might happen when the tile38 command is called.  The `tile38.call()` will raise a Lua error, while `tile38.pcall()` will return a Lua table containing the error message.
 
 The arguments of `tile38.call()` and `tile38.pcall()` are the same tokens one would send as a tile38 command:
-```tile38
+```tile38-cli
 EVAL 'return tile38.call("GET", "fleet", "truck1", "POINT")' 0
 1) "33"
 2) "-115"
 ```
 
 Note that the above call includes the key name into the script and sends 0 keys.  This should be avoided in favor of the following form:
-```tile38
+```tile38-cli
 EVAL 'return tile38.call("GET", KEYS[1], ARGV[1], "POINT")' 1 mykey myid1
 1) "33"
 2) "-115"
@@ -117,12 +117,12 @@ Tile38 has an internal caching mechanism that will avoid recompiling a script on
 However, you can run scripts even more efficiently (taking less bandwidth) by using -SHA version of the commands: [EVALSHA](/commands/evalsha), [EVALROSHA](/commands/evalrosha), and [EVALNASHA](/commands/evalnasha).  For each script you want to run:
 
 1. Load that script by [SCRIPT LOAD](/commands/script-load) command, which returns the SHA1 digest of your script.
-```tile38
+```tile38-cli
 SCRIPT LOAD "return tile38.pcall('set', KEYS[1], ARGV[1], 'point', ARGV[2], ARGV[2])"
 "d8bc159162250f39654a6466a92a66215814877b"
 ```
 2. Use a -SHA command exactly as you would have used a non-SHA command, the only difference being that you send a SHA1 digest string as your first argument.
-```tile38
+```tile38-cli
 EVALSHA d8bc159162250f39654a6466a92a66215814877b 1 mykey myid2 33.1 -115.1
 OK
 ```
@@ -140,7 +140,7 @@ The changes to the tile38 data made by scripts are replicated on the command lev
 
 ## Global variables protection
 The scripts are not allowed to create global variables, as this would leak memory in the re-used Lua state.  An attempt to create a global variable will result in error:
-```tile38
+```tile38-cli
 EVAL 'a=10' 0
 (error) ERR f_933044db579a2f8fd45d8065f04a8d0249383e57:1: attempt to create global variable 'a'
 stack traceback:
@@ -151,7 +151,7 @@ stack traceback:
 Note: this measure can only prevent the accidental modifications of the global namespace.  If the malicious user really wants to modify or delete existing global variables, there's no protection we could put in place that the user could not undo.  Therefore there's no more protection for existing globals. Do not mess them up!
 
 Any variables that the script needs to set up should be prepended with the `local` keyword:
-```tile38
+```tile38-cli
 EVAL 'local a=10; return a * 3' 0
 (integer) 30
 ```
@@ -177,7 +177,7 @@ Every Tile38 instance is guaranteed to have all these libraries so you can be su
 
 The JSON library exposes `decode` and `encode` functions. Examples:
 
-```tile38
+```tile38-cli
 > EVAL 'return json.encode({["foo"]= "bar"})' 0
 "{\"foo\":\"bar\"}"
     

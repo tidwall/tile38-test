@@ -17,7 +17,7 @@ The QUIT command instructs the server to close the connection.
 
 ## Examples
 
-```tile38
+```tile38-cli
 QUIT
 ```
 

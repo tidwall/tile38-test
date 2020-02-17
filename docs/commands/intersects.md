@@ -18,7 +18,7 @@ INTERSECTS searches a collection for objects that intersect a specified bounding
 
 This command has many options, but at it’s most simplest it may appear like.
 
-```tile38
+```tile38-cli
 INTERSECTS fleet BOUNDS 33.462 -112.268 33.491 -112.245
 ```
 
@@ -90,7 +90,7 @@ Below is a complete list of area formats. These formats are shared by the [WITHI
 
 **GET** - Any object that already exists in the database. For example, 
 
-```tile38
+```tile38-cli
 WITHIN poi GET cities tempe
 ```
 

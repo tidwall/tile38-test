@@ -16,7 +16,7 @@ Return stats for one or more keys.
 
 ## Examples
 
-```tile38
+```tile38-cli
 STATS fleet1 fleet2   # return key stats for 'fleet' and 'fleet2'
 ```
 
@@ -30,7 +30,7 @@ The `stats` array will contain one entry for each key requested. If the key is n
 - `num_points`: The total number of latitude, longitude coordinates in the key. This will always be equal to or greater than `num_objects`.
 
 
-```tile38-json
+```json
 {
     "ok": true,
     "stats": [{

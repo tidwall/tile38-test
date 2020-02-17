@@ -18,7 +18,7 @@ Deletes all the keys.
 
 ## Examples
 
-```tile38
+```tile38-cli
 FLUSHDB
 ```
 

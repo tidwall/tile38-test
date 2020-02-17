@@ -18,7 +18,7 @@ WITHIN searches a collection for objects that are fully contained inside of a sp
 
 This command has many options, but at it’s most simplest it may appear like.
 
-```tile38
+```tile38-cli
 WITHIN fleet BOUNDS 33.462 -112.268 33.491 -112.245
 ```
 

@@ -16,7 +16,7 @@ Delete a value from a JSON document.
 
 JGET, JSET, and JDEL allow for working with JSON strings, for example:
 
-```tile38
+```tile38-cli
 JSET user 901 name Tom
 JGET user 901
 > {"name":"Tom"}

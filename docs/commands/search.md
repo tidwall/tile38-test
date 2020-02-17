@@ -16,7 +16,7 @@ SEARCH iterates though a key's string values.
 
 This command has many options, but at it’s most simplest it may appear like.
 
-```tile38
+```tile38-cli
 SEARCH names
 ```
 
@@ -25,7 +25,7 @@ Above is a scan for all strings in the `names` key.
 It's also possible to filter the values using the MATCH keyword and to order the results using ASC and DESC.
 For Example:
 
-```tile38
+```tile38-cli
 SEARCH names MATCH J* DESC
 ```
 

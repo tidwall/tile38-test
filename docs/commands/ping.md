@@ -17,7 +17,7 @@ Ping the server. The response will contain `"pong"`.
 
 ## Examples
 
-```tile38
+```tile38-cli
 PING
 ```
 

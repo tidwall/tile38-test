@@ -16,7 +16,7 @@ Remove a specified channel.
 
 ## Examples
 
-```tile38
+```tile38-cli
 DELCHAN warehouse
 ```
 

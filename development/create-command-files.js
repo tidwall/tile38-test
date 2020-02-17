@@ -1,4 +1,6 @@
 const fs = require("fs");
+const readline = require("readline");
+var colors = require("colors");
 
 const rawdata = fs.readFileSync("commands.json");
 const commands = JSON.parse(rawdata);
@@ -160,8 +162,21 @@ function getCommandBody(fileName) {
   let body = "## Description\n\n" + data.slice(bodyBeginIndex).trim() + "\n";
 
   // replace /assets/images with /img
-  if (body.match(/\/assets\/images/g))
+  if (body.match(/\/assets\/images/g)) {
     body = body.replace(/\/assets\/images/g, "/img");
+  }
+
+  // replace codeblock tag 'tile38-json' with 'json'
+  if (body.match(/\`\`\`tile38-json/g)) {
+    console.log("found a tile38-json match!".cyan);
+    body = body.replace(/\`\`\`tile38-json/g, "```json");
+  }
+
+  // replace codeblock tag 'tile38' with 'tile38-cli'
+  if (body.match(/\`\`\`tile38/g)) {
+    console.log("found a tile38 match!".magenta);
+    body = body.replace(/\`\`\`tile38/g, "```tile38-cli");
+  }
 
   return body;
 }

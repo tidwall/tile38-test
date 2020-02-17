@@ -18,7 +18,7 @@ Creates a webhook which points to a [geofenced](/topics/geofencing) search. If a
 
 Set a simple hook.
 
-```tile38
+```tile38-cli
 SETHOOK warehouse http://10.0.20.78/endpoint NEARBY fleet FENCE POINT 33.5123 -112.2693 500
 ```
 
@@ -52,7 +52,7 @@ The `grpc://` url scheme provides support for sending messages over [GRPC](http:
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse grpc://10.0.20.78:6798/ ...
 ```
 
@@ -66,7 +66,7 @@ The `redis://` url scheme provides support for sending messages to a [Redis](htt
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse redis://10.0.20.78:6379/warehouse ...
 ```
 
@@ -78,7 +78,7 @@ The `disque://` url scheme provides support for sending messages to a [Disque](h
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse disque://10.0.20.78:7711/warehouse?replicate=2 ...
 ```
 
@@ -90,7 +90,7 @@ The `kafka://` url scheme provides support for sending messages to a [Kafka](htt
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse kafka://10.0.20.78:9092/warehouse ...
 ```
 
@@ -102,7 +102,7 @@ The `amqp://` url scheme provides support for sending messages to a [RabbitMQ](h
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse amqp://guest:guest@10.0.20.78:5672/warehouse?route=tile ...
 ```
 
@@ -128,7 +128,7 @@ The `mqtt://` url scheme provides support for sending messages to a MQTT broker
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse mqtt://10.0.1.1:8443/mytopic?qos=1&retained=0 ...
 ```
 
@@ -150,7 +150,7 @@ Sending to [SQS](https://aws.amazon.com/sqs/) requires the URL endpoint that AWS
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse https://sqs.us-east-1.amazonaws.com/349840735605/myqueue ...
 ```
 
@@ -178,7 +178,7 @@ The `nats://` url scheme provides support for sending messages to a [NATS](https
 
 For example:
 
-```tile38
+```tile38-cli
 SETHOOK warehouse nats://127.0.0.1:42222/mytopic?user=admin?pass=123 ...
 ```
 
@@ -195,7 +195,7 @@ The following optional parameters are available for this hook, the listed value 
 
 It's possible to specify multiple endpoints for a webhook by separating each with a comma. Make sure that there are no spaces between the comma and the urls.
 
-```tile38
+```tile38-cli
 SETHOOK warehouse http://10.0.20.78/ep1,http://10.0.20.78/ep2 ...
 ```
 

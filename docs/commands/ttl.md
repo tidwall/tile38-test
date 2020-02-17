@@ -16,7 +16,7 @@ Get a timeout on an id.
 
 ## Examples
 
-```tile38
+```tile38-cli
 TTL fleet truck1 
 ```
 

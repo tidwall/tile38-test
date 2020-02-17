@@ -16,7 +16,7 @@ Remove all objects from specified key.
 
 ## Examples
 
-```tile38
+```tile38-cli
 DROP fleet
 ```
 

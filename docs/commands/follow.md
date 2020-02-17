@@ -16,7 +16,7 @@ The FOLLOW command instructs the Tile38 server to follow a leader and replicated
 
 ## Examples
 
-```tile38
+```tile38-cli
 FOLLOW 10.0.1.15 9851     # Follow a leader at 10.0.1.15, port: 9851
 FOLLOW no one             # Stop following
 ```

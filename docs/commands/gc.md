@@ -17,7 +17,7 @@ Instructs the server to perform a garbage collection. This command is not really
 
 ## Examples
 
-```tile38
+```tile38-cli
 GC
 ```
 

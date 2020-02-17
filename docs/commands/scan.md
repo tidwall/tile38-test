@@ -16,7 +16,7 @@ SCAN incrementally iterates though a key.
 
 This command has many options, but at it’s most simplest it may appear like.
 
-```tile38
+```tile38-cli
 SCAN fleet
 ```
 

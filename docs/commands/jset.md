@@ -18,7 +18,7 @@ Set a value in a JSON document.
 
 JGET, JSET, and JDEL allow for working with JSON strings, for example:
 
-```tile38
+```tile38-cli
 JSET user 901 name Tom
 JGET user 901
 > {"name":"Tom"}
@@ -39,7 +39,7 @@ JSET allows a set of options that modify its behavior:
 
 `RAW` allows `value` to be interpreted as a serialized JSON object:
 
-```tile38
+```tile38-cli
 SET linestrings 1 OBJECT {"type": "LineString", "coordinates": [[0, 0], [1, 1]]}
 JSET linestrings 1 coordinates.-1 [2,2] RAW
 JGET linestrings 1
@@ -47,7 +47,7 @@ JGET linestrings 1
 ```
 
 `STR` allows `value` to be interpreted as a string:
-```tile38
+```tile38-cli
 JSET test 1 properties.bool true
 JGET test 1 properties.bool
 > {"value":true}
