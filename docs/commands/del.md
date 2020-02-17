@@ -6,7 +6,7 @@ sidebar_label: DEL
 
 ## Full Syntax
 
-DEL key id
+**DEL  key id**
 
 ---
 

@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-SEARCH key CURSOR LIMIT MATCH order WHERE WHEREIN WHEREEVAL WHEREEVALSHA NOFIELDS type
+**SEARCH  key [CURSOR start] [LIMIT count] [MATCH pattern] [ASC|DESC] [WHERE field min max ...] [WHEREIN field count value [value...] ...] [WHEREEVAL script numargs arg [arg...] ...] [WHEREEVALSHA sha1 numargs arg [arg...] ...] [NOFIELDS] [COUNT|IDS]**
 
 ---
 

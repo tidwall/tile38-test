@@ -12,17 +12,16 @@ super:   documentation
 Tile38 1.2 introduces a powerful new feature which allows for dynamic [geofences](/topics/geofencing). This enables realtime monitoring for when one or more moving objects are nearby each other.
 
 A couple of common use cases are:
-  
-  - **Vehicle pickup services**: Instantly be notified when a vehicle is nearby somebody waiting to be picked up, or when a person approaches a vehicle, or when a vehicle is nearby other vehicles in the fleet.
 
-  - **Proximity social apps**: Very useful for when you need to check if two users are nearby each other without having to constantly query the database.
+- **Vehicle pickup services**: Instantly be notified when a vehicle is nearby somebody waiting to be picked up, or when a person approaches a vehicle, or when a vehicle is nearby other vehicles in the fleet.
 
+- **Proximity social apps**: Very useful for when you need to check if two users are nearby each other without having to constantly query the database.
 
 <br clear="all">
 
 A simple example:
 
-```tile38
+```tile38-cli
 NEARBY people FENCE ROAM people * 5000
 ```
 
@@ -31,14 +30,17 @@ This will open a roaming fence on the `people` collection. The fence watches for
 To test, open two terminals:
 
 ## Terminal 1
-Connect to the Tile38 server and enter the fence command. 
+
+Connect to the Tile38 server and enter the fence command.
 
 ```tile38-cli
 $ tile38-cli
 localhost:9851> NEARBY people FENCE ROAM people * 5000
 +OK
 ```
+
 ## Terminal 2
+
 Add two points to the `people` collection. The second SET command will trigger a fence event that will appear in the other terminal.
 
 ```tile38-cli
@@ -49,20 +51,20 @@ localhost:9851> SET people alice POINT 33.02 -115.02
 
 The event will appear in terminal 1 and look like:
 
-```tile38-json
+```json
 {
-    "command":"set", 
-    "detect":"roam", 
-    "hook":"",
-    "key":"people", 
-    "id":"alice",
-    "time":"2016-05-24T09:19:44.08649461-07:00",
-    "object":{"type":"Point","coordinates":[-115.02,33.02]},
-    "nearby":{
-        "key":"people",
-        "id":"bob",
-        "meters":1451.138152186708
-    }
+  "command": "set",
+  "detect": "roam",
+  "hook": "",
+  "key": "people",
+  "id": "alice",
+  "time": "2016-05-24T09:19:44.08649461-07:00",
+  "object": { "type": "Point", "coordinates": [-115.02, 33.02] },
+  "nearby": {
+    "key": "people",
+    "id": "bob",
+    "meters": 1451.138152186708
+  }
 }
 ```
 
@@ -86,7 +88,7 @@ SETHOOK myhook http://10.0.1.5/hook NEARBY people FENCE ROAM people * 5000
 ### NODWELL Keyword
 
 One side effect is that you may get a lot of nearby notifications when two
-objects continue to be nearby each other. If this is a problem then use the 
+objects continue to be nearby each other. If this is a problem then use the
 `NODWELL` keyword.
 
 ```tile38-cli
@@ -95,4 +97,3 @@ tile38-cli> NEARBY people FENCE NODWELL ROAM people * 5000
 
 This will ensure that there is repeating nearby or faraway notifications for two
 connecting objects.
-

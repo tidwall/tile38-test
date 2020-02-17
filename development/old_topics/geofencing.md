@@ -11,7 +11,6 @@ super:   documentation
 A [geofence](https://en.wikipedia.org/wiki/Geo-fence) is a virtual boundary that can detect when an object enters or exits the area. This boundary can be a radius or any [search area format](/commands/intersects#area-formats), such as a [bounding box](/topics/object-types#bounding-box), [GeoJSON](/topics/object-types#geojson) object, etc. Tile38 can turn any standard search into a geofence monitor by adding the FENCE keyword to the search. 
 <br clear="all">
 
-
 To demonstrate, we'll use a pubsub channel to listen for geofence notifications. Open two terminals:
 
 ## Terminal 1
@@ -48,20 +47,20 @@ localhost:9851> SET fleet bus POINT 33.460 -112.260
 
 The event will appear in Terminal 1 and look like:
 
-```tile38-json
+```json
 {
-    "command":"set",
-    "group":"5c5203ccf5ec4e4f349fd038",
-    "detect":"inside",
-    "hook":"warehouse",
-    "key":"fleet",
-    "time":"2019-01-30T13:06:36.769273-07:00",
-    "id":"bus",
-    "object":{"type":"Point","coordinates":[-112.26,33.46]}
+  "command": "set",
+  "group": "5c5203ccf5ec4e4f349fd038",
+  "detect": "inside",
+  "hook": "warehouse",
+  "key": "fleet",
+  "time": "2019-01-30T13:06:36.769273-07:00",
+  "id": "bus",
+  "object": { "type": "Point", "coordinates": [-112.26, 33.46] }
 }
 ```
 
-The server will notify the subscribed clients if the `command` is **`del`** or **`set`** or **`drop`**. 
+The server will notify the subscribed clients if the `command` is **`del`** or **`set`** or **`drop`**.
 
 - **`del`** notifies the client that an object has been deleted from the collection that is being fenced.
 - **`drop`** notifies the client that the entire collection is dropped.
@@ -79,17 +78,16 @@ The **`detect`** may be one of the following values.
 By default **all** detect types and commands are returned.
 If you would like to only have a select few then use the `DETECT` option, for example:
 
-```tile38
+```tile38-cli
 SETCHAN warehouse NEARBY fleet FENCE DETECT inside,outside POINT 33.462 -112.268 6000
 ```
 
 This command will only tell the fence that you only want **inside** and **outside** detection.
 
-It's also possible to mask which commands are returned by using the	`COMMANDS` option, for example:
+It's also possible to mask which commands are returned by using the `COMMANDS` option, for example:
 
-```tile38
+```tile38-cli
 SETCHAN warehouse NEARBY fleet FENCE DETECT enter COMMANDS set POINT 33.462 -112.268 6000
 ```
 
 This specifies that you only want the **enter** detection for the **set** command.
-

@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-EVALRO script numkeys key arg
+**EVALRO  script numkeys [key ...] [arg ...]**
 
 ---
 

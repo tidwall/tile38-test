@@ -6,7 +6,7 @@ sidebar_label: WITHIN
 
 ## Full Syntax
 
-WITHIN key CURSOR LIMIT SPARSE MATCH WHERE WHEREIN WHEREEVAL WHEREEVALSHA NOFIELDS FENCE DETECT COMMANDS type area
+**WITHIN  key [CURSOR start] [LIMIT count] [SPARSE spread] [MATCH pattern] [WHERE field min max ...] [WHEREIN field count value [value...] ...] [WHEREEVAL script numargs arg [arg...] ...] [WHEREEVALSHA sha1 numargs arg [arg...] ...] [NOFIELDS] [FENCE] [DETECT what] [COMMANDS which] [COUNT|IDS|OBJECTS|POINTS|BOUNDS|(HASHES precision)] (GET key id)|(BOUNDS minlat minlon maxlat maxlon)|(OBJECT geojson)|(CIRCLE lat lon meters)|(TILE x y z)|(QUADKEY quadkey)|(HASH geohash)**
 
 ---
 
