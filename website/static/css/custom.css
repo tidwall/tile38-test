@@ -15,6 +15,7 @@ body {
 /********************************/
 /* TOP NAVIGATION BAR
 /********************************/
+
 .fixedHeaderContainer {
   background-color: $secondaryColor;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -31,6 +32,7 @@ body {
 
 .navigationSlider .slidingNav ul li a {
   color: black;
+  font-weight: 400;
 }
 
 .navigationSlider .slidingNav ul li.siteNavItemActive > a,
@@ -50,12 +52,25 @@ body {
 /********************************/
 /* MAIN DOCUMENT
 /********************************/
-.docsContainer > .wrapper {
-  margin-top: 80px;
+
+/* HOME */
+.homeContainer .homeWrapper {
+  padding-top: 80px;
 }
 
-.homeContainer {
-  margin-top: 80px;
+/* DOCS */
+.docsContainer {
+  padding-top: 80px;
+}
+
+/* BLOG */
+.blogContainer {
+  padding-top: 90px;
+}
+
+/* keep blog content width consistent with other pages at varying page widths */
+.blog .wrapper {
+  max-width: 1400px;
 }
 
 /* CODE */
@@ -122,8 +137,12 @@ code.language-tile38-cli .hljs-geojson {
     overflow-y: visible;
   }
 
+  nav.toc {
+    padding: 0 0;
+  }
+
   .onPageNav {
-    margin-top: 120px;
+    margin-top: 80px;
   }
 
   .documentContainer > .wrapper {
@@ -154,8 +173,39 @@ code.language-tile38-cli .hljs-geojson {
 }
 
 @media only screen and (max-width: 1023px) {
-  .documentContainer > .wrapper {
-    margin-top: 40px;
+  /* add some top space to header logo in top nav */
+  .fixedHeaderContainer {
+    padding-top: 18px;
+  }
+
+  /* align left and right margins of nav and page contents on small screens */
+  .wrapper {
+    padding: 0 30px;
+  }
+  .docsNavContainer .toc .navBreadcrumb {
+    padding: 8px 30px;
+  }
+
+  /* bring onPageNav to front if hamburger button has been toggled first */
+  .tocActive .onPageNav {
+    z-index: 999;
+  }
+
+  /* add padding to onPageNav toc headings when toggled */
+  .tocActive .onPageNav > .toc-headings {
+    padding: 20px 10px;
+  }
+
+  /* add padding to hamburger button categories when toggled */
+  .docsSliderActive .toc section .navGroups {
+    padding: 70px 30px;
+  }
+
+  /* add hide of hamburger button on dots toggle */
+  .tocActive .navToggle,
+  .tocActive .navBreadcrumb h2 {
+    opacity: 0;
+    transition: visibility 0s 0.1s, opacity 0s linear;
   }
 }
 
