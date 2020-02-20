@@ -26,10 +26,6 @@ body {
   display: none;
 }
 
-.navigationSlider .slidingNav ul li {
-  background-color: $navSliderBackground;
-}
-
 .navigationSlider .slidingNav ul li a {
   color: black;
   font-weight: 400;
@@ -170,12 +166,41 @@ code.language-tile38-cli .hljs-geojson {
     background: #0d6c9b;
     transition: 0.4s;
   }
+
+  /* EDIT LINK BUTTON */
+  .edit-page-link {
+    font-size: 12px;
+    color: default;
+    background: default;
+    color: initial;
+    background: initial;
+    border: 1px solid #0d6c9b;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
-  /* add some top space to header logo in top nav */
+  /*
+    - add some top space to header logo in top nav 
+    - remove bottom border to get rid of white space showing up 
+      b/t logo and navbar
+  */
   .fixedHeaderContainer {
     padding-top: 18px;
+    border-bottom: 0px;
+    justify-content: center;
+  }
+
+  /* remove white space b/t log and navbar */
+  ul.nav-site.nav-site-internal {
+    margin-top: 60px;
+  }
+  .docsNavContainer {
+    margin-top: 10px;
+  }
+
+  /* center tile38 logo in header */
+  .fixedHeaderContainer header {
+    justify-content: center;
   }
 
   /* align left and right margins of nav and page contents on small screens */

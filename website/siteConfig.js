@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "topics/installation", label: "Documentation" },
+    { doc: "topics/installation", label: "Docs" },
     { page: "license", label: "License" },
     { blog: true, label: "Blog" },
     { href: "/topics/installation", label: "Get Tile38", button: true }
@@ -125,6 +125,9 @@ const siteConfig = {
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
   // docsSideNavCollapsible: true
+
+  // Show edit button for docs
+  editUrl: "https://github.com/melbania/docusaurus-test/edit/master/docs/",
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
