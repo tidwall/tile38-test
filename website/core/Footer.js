@@ -28,52 +28,50 @@ class Footer extends React.Component {
           <div>
             <section className="copyright">
               {this.props.config.copyright}
+              <a href={this.docUrl("license")}>MIT License</a>
             </section>
           </div>
-          <div>
+
+          <div className="docs">
             <h5>Docs</h5>
-            <a href={this.docUrl("doc1.html", this.props.language)}>
-              Getting Started (or other categories)
-            </a>
-            <a href={this.docUrl("doc2.html", this.props.language)}>
-              Guides (or other categories)
-            </a>
-            <a href={this.docUrl("doc3.html", this.props.language)}>
-              API Reference (or other categories)
-            </a>
+            <a href={this.docUrl("topics/installation")}>Getting Started</a>
+            <a href={this.docUrl("topics/geofencing")}>Geofences</a>
+            <a href={this.docUrl("commands/all-commands")}>Commands</a>
           </div>
-          <div>
+          <div className="community">
             <h5>Community</h5>
-            <a href={this.pageUrl("users.html", this.props.language)}>
+            {/* <a href={this.pageUrl("users.html", this.props.language)}>
               User Showcase
-            </a>
+            </a> */}
             <a
-              href="https://stackoverflow.com/questions/tagged/"
+              href="https://stackoverflow.com/search?q=tile38"
               target="_blank"
               rel="noreferrer noopener"
             >
               Stack Overflow
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
+            <a href="https://tile38.com/slack" target="_blank">
+              Slack
+            </a>
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com/tile38db"
               target="_blank"
               rel="noreferrer noopener"
             >
               Twitter
             </a>
           </div>
-          <div>
+          <div className="more">
             <h5>More</h5>
             {/* BLOG */}
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             {/* GITHUB  */}
-            <a href="https://github.com/">GitHub</a>
+            <a href="https://github.com/tidwall/tile38">GitHub</a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
+              data-count-href="/tidwall/tile38/stargazers"
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
               aria-label="Star this project on GitHub"
