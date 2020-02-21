@@ -62,7 +62,6 @@ body {
 }
 
 /* SECTION (hero) */
-
 section.hero .content {
   height: 500px;
 }
@@ -358,8 +357,17 @@ section.basic.community .cards .row div img.email {
 /********************************/
 
 /* HOME */
-.homeContainer .homeWrapper {
-  padding-top: 80px;
+.homeContainer {
+  padding-top: 30px;
+}
+
+/* section.geofence .text-container {
+  width: unset;
+  padding-right: 30px;
+} */
+
+.homeContainer .wrapper {
+  padding: 0 0;
 }
 
 /* DOCS */
