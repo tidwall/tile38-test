@@ -9,65 +9,8 @@ const React = require("react");
 
 const CompLibrary = require("../../core/CompLibrary.js");
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
-
-class HomeSplash extends React.Component {
-  render() {
-    const { siteConfig, language = "" } = this.props;
-    const { baseUrl, docsUrl } = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
-    const langPart = `${language ? `${language}/` : ""}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
-
-    const SplashContainer = props => (
-      <div className="homeContainer">
-        <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
-        </div>
-      </div>
-    );
-
-    const Logo = props => (
-      <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
-      </div>
-    );
-
-    const ProjectTitle = props => (
-      <h2 className="projectTitle">
-        {props.title}
-        <small>{props.tagline}</small>
-      </h2>
-    );
-
-    const PromoSection = props => (
-      <div className="section promoSection">
-        <div className="promoRow">
-          <div className="pluginRowBlock">{props.children}</div>
-        </div>
-      </div>
-    );
-
-    const Button = props => (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={props.href} target={props.target}>
-          {props.children}
-        </a>
-      </div>
-    );
-
-    return (
-      <SplashContainer>
-        <div className="inner">
-          <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <PromoSection>This is a test. This is only a test.</PromoSection>
-        </div>
-      </SplashContainer>
-    );
-  }
-}
 
 class Index extends React.Component {
   render() {
@@ -89,7 +32,7 @@ class Index extends React.Component {
     );
 
     const Hero = () => (
-      <Container>
+      <Container className="heroContainer">
         <section className="hero">
           <div className="content">
             <div className="textarea">
@@ -136,7 +79,7 @@ class Index extends React.Component {
     );
 
     const Geofence = () => (
-      <Container>
+      <Container className="geofenceContainer">
         <section className="geofence">
           <div className="content">
             <div className="text-container">
@@ -173,7 +116,7 @@ class Index extends React.Component {
     );
 
     const SpatialIndex = () => (
-      <Container>
+      <Container className="spatialIndexContainer">
         <section className="basic spatial-index">
           <h1 className="w600">Fast Spatial Index</h1>
           <p>
@@ -209,7 +152,7 @@ class Index extends React.Component {
     );
 
     const GeoEvents = () => (
-      <Container>
+      <Container className="geoEventsContainer">
         <section className="basic geo-events">
           <h1 className="w600">Automated Events</h1>
           <p>
@@ -284,7 +227,7 @@ class Index extends React.Component {
     );
 
     const Community = () => (
-      <Container>
+      <Container className="communityContainer">
         <section className="basic community">
           <h1 className="w600">
             Open Source <div className="with-love"></div>
@@ -367,7 +310,6 @@ class Index extends React.Component {
           <SpatialIndex></SpatialIndex>
           <GeoEvents></GeoEvents>
           <Community></Community>
-          <Showcase />
         </div>
       </div>
     );
