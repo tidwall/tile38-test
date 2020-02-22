@@ -140,7 +140,7 @@ const siteConfig = {
   repoUrl: "https://github.com/tidwall/tile38",
 
   // hide /docs/ directory in URL
-  // docsUrl: "",
+  docsUrl: "",
 
   // wrap raw HTML fragments in pages/ with Docusaurus styles
   wrapPagesHTML: true
