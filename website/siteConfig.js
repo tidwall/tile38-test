@@ -24,7 +24,7 @@ const siteConfig = {
   title: "Tile38-test", // Title for your website.
   tagline: "Ultra Fast Geospatial Database & Geofencing Server",
   url: "https://melbania.github.io", // Your website URL
-  baseUrl: "/tile38-test/", // Base URL for your project */
+  baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
