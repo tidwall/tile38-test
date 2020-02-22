@@ -162,7 +162,7 @@ function getCommandBody(fileName) {
 
   // replace /assets/images with /img
   if (body.match(/\/assets\/images/g)) {
-    body = body.replace(/\/assets\/images/g, "/img");
+    body = body.replace(/\/assets\/images/g, "./../img");
   }
 
   // replace codeblock tag 'tile38-json' with 'json'
