@@ -63,11 +63,11 @@ class Index extends React.Component {
                   muted
                   autoPlay
                   _hd="400px"
-                  _poster="/img/hero-desktop.jpg"
-                  _src="/img/hero-desktop.mp4"
+                  _poster="./img/hero-desktop.jpg"
+                  _src="./img/hero-desktop.mp4"
                   _mobile="850px"
-                  _mobileposter="/img/hero-mobile.jpg"
-                  _mobilesrc="/img/hero-mobile.mp4"
+                  _mobileposter="./img/hero-mobile.jpg"
+                  _mobilesrc="./img/hero-mobile.mp4"
                   _loopdelay="3000ms"
                 ></video>
                 <script>videoAutoPlay();</script>
@@ -102,8 +102,8 @@ class Index extends React.Component {
                 muted
                 autoPlay
                 _hd="320px"
-                _poster="/img/geofences.jpg"
-                _src="/img/geofences.mp4"
+                _poster="./img/geofences.jpg"
+                _src="./img/geofences.mp4"
                 _loopdelay="0ms"
               ></video>
               <script>videoAutoPlay();</script>
@@ -131,19 +131,19 @@ class Index extends React.Component {
           <div className="cards">
             <div className="row">
               <div>
-                <img src="/img/search-intersects.png" />
+                <img src="./img/search-intersects.png" />
               </div>
               <div>
-                <img src="/img/search-within.png" />
+                <img src="./img/search-within.png" />
               </div>
               <div>
-                <img src="/img/search-nearby.png" />
+                <img src="./img/search-nearby.png" />
               </div>
               <div>
-                <img src="/img/geofence.gif" />
+                <img src="./img/geofence.gif" />
               </div>
               <div>
-                <img src="/img/roaming.gif" />
+                <img src="./img/roaming.gif" />
               </div>
             </div>
           </div>
@@ -164,28 +164,28 @@ class Index extends React.Component {
             <div className="row">
               <div>
                 <img
-                  src="/img/integrate-nats.png"
+                  src="./img/integrate-nats.png"
                   className="nats"
                   alt="NATS"
                 />
               </div>
               <div>
                 <img
-                  src="/img/integrate-kafka.png"
+                  src="./img/integrate-kafka.png"
                   className="kafka"
                   alt="Kafka"
                 />
               </div>
               <div>
                 <img
-                  src="/img/integrate-amazonsqs.svg"
+                  src="./img/integrate-amazonsqs.svg"
                   className="amazonsqs"
                   alt="Amazon SQS"
                 />
               </div>
               <div>
                 <img
-                  src="/img/integrate-grpc.png"
+                  src="./img/integrate-grpc.png"
                   className="grpc"
                   alt="GRPC"
                 />
@@ -194,28 +194,28 @@ class Index extends React.Component {
             <div className="row">
               <div>
                 <img
-                  src="/img/integrate-redis.png"
+                  src="./img/integrate-redis.png"
                   className="redis"
                   alt="Redis"
                 />
               </div>
               <div>
                 <img
-                  src="/img/integrate-rabbitmq.png"
+                  src="./img/integrate-rabbitmq.png"
                   className="rabbitmq"
                   alt="RabbitMQ"
                 />
               </div>
               <div>
                 <img
-                  src="/img/integrate-mqtt.png"
+                  src="./img/integrate-mqtt.png"
                   className="mqtt"
                   alt="MQTT"
                 />
               </div>
               <div>
                 <img
-                  src="/img/integrate-http2.png"
+                  src="./img/integrate-http2.png"
                   className="http2"
                   alt="HTTP/2"
                 />
@@ -243,7 +243,7 @@ class Index extends React.Component {
               <div>
                 <a href="https://github.com/tidwall/tile38">
                   <img
-                    src="/img/community-github.svg"
+                    src="./img/community-github.svg"
                     className="github"
                     alt="Github"
                   />
@@ -252,7 +252,7 @@ class Index extends React.Component {
               <div>
                 <a href="https://twitter.com/tile38db">
                   <img
-                    src="/img/community-twitter.svg"
+                    src="./img/community-twitter.svg"
                     className="twitter"
                     alt="Twitter"
                   />
@@ -261,7 +261,7 @@ class Index extends React.Component {
               <div>
                 <a href="https://join.slack.com/t/tile38/shared_invite/enQtMzQ0OTEwMDUxMzc5LTc0NTJjZmM3YjFhOGZiZGU2NDNjOWEwM2Q5ZWE3MzFiYWZkZDIyN2U2ZmUzZDBmODU0MjI1ZjQ0N2Y1M2I1NTg">
                   <img
-                    src="/img/community-slack.svg"
+                    src="./img/community-slack.svg"
                     className="slack"
                     alt="Slack"
                   />

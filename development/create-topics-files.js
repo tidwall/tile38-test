@@ -36,7 +36,14 @@ function getHeader(id, title, sidebarLabel) {
 function getTopicBody(data) {
   const mdHeadEnd = data.match(/-->/);
   const bodyBeginIndex = mdHeadEnd.index + 3;
-  const body = "\n\n" + data.slice(bodyBeginIndex).trim() + "\n";
+  let body = data.slice(bodyBeginIndex).trim();
+
+  // replace /img/ with ./../img/
+  if (body.match(/\/img\//g)) {
+    body = body.replace(/\/img\//g, "./../img/");
+  }
+
+  body = "\n\n" + body + "\n";
 
   return body;
 }
