@@ -24,7 +24,7 @@ const siteConfig = {
   title: "Tile38-test", // Title for your website.
   tagline: "Ultra Fast Geospatial Database & Geofencing Server",
   url: "https://melbania.github.io", // Your website URL
-  baseUrl: "/", // Base URL for your project */
+  baseUrl: "/tile38-test/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -140,7 +140,7 @@ const siteConfig = {
   repoUrl: "https://github.com/tidwall/tile38",
 
   // hide /docs/ directory in URL
-  docsUrl: "",
+  // docsUrl: "",
 
   // wrap raw HTML fragments in pages/ with Docusaurus styles
   wrapPagesHTML: true
