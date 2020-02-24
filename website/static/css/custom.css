@@ -525,6 +525,10 @@ div.more {
     justify-content: center;
   }
 
+  .fixedHeaderContainer header img {
+    margin-right: 0;
+  }
+
   /* remove white space b/t log and navbar */
   ul.nav-site.nav-site-internal {
     margin-top: 60px;
