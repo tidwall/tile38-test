@@ -361,13 +361,21 @@ section.basic.community .cards .row div img.email {
   padding-top: 30px;
 }
 
-/* section.geofence .text-container {
-  width: unset;
-  padding-right: 30px;
-} */
-
 .homeContainer .wrapper {
   padding: 0 0;
+}
+
+a.tile38NavButton:hover,
+a.tile38NavButton.solid {
+  color: white;
+  background: #0d6c9b;
+  transition: 0.4s;
+  border-radius: 6px;
+  padding: 10px 16px;
+}
+a.tile38NavButton.solid:hover {
+  background: #09405c;
+  transition: 0.4s;
 }
 
 /* DOCS */
