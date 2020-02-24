@@ -38,7 +38,7 @@ class Index extends React.Component {
             <div className="textarea">
               <div className="inner">
                 <h1 className="w400">
-                  <span className="w900">Ultra Fast</span>
+                  <span className="w900">Ultra Fast </span>
                   Geospatial Database &amp;
                   <br className="break" />
                   Geofencing Server
@@ -49,7 +49,10 @@ class Index extends React.Component {
                 </p>
                 <p>
                   <br />
-                  <a href="/topics/getting-started" className="button solid">
+                  <a
+                    href="topics/installation"
+                    className="tile38NavButton solid"
+                  >
                     Get Tile38
                   </a>
                 </p>
