@@ -40,8 +40,7 @@ class Index extends React.Component {
                 <h1 className="w400">
                   <span className="w900">Ultra Fast </span>
                   Geospatial Database &amp;
-                  <br className="break" />
-                  Geofencing Server
+                  <br className="break" /> Geofencing Server
                 </h1>
                 <p>
                   Ensure your location-based applications are running at their
