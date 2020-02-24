@@ -25,7 +25,7 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <section className="sitemap">
-          <div>
+          <div className="legal">
             <section className="copyright">
               {this.props.config.copyright}
               <a href={this.docUrl("license")}>MIT License</a>

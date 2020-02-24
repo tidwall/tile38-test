@@ -535,6 +535,14 @@ div.more {
     background: initial;
     border: 1px solid #0d6c9b;
   }
+
+  /* FOOTER */
+  .nav-footer .sitemap div {
+    flex: unset;
+  }
+  .nav-footer .sitemap div.legal {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
