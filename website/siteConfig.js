@@ -41,7 +41,12 @@ const siteConfig = {
     { doc: "topics/installation", label: "Docs" },
     { page: "license", label: "License" },
     { blog: true, label: "Blog" },
-    { href: "/topics/installation", label: "Get Tile38", button: true }
+    {
+      href: "https://github.com/tidwall/tile38",
+      label: "GitHub",
+      external: true
+    },
+    { doc: "topics/installation", label: "Get Tile38", button: true }
   ],
 
   // If you have users set above, you add it here:
@@ -111,7 +116,10 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ["https://buttons.github.io/buttons.js", "./js/videoAutoPlay.js"],
+  scripts: [
+    "https://buttons.github.io/buttons.js",
+    "/tile38-test/js/videoAutoPlay.js"
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: "separate",
