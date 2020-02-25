@@ -12,7 +12,7 @@ sidebar_label: __no_label
 
 ## Description
 
-Evaluates a Lua script in a non-atomic fashion. The command uses **None** atomicity level and is otherwise identical to [EVAL](/commands/eval).
+Evaluates a Lua script in a non-atomic fashion. The command uses **None** atomicity level and is otherwise identical to [EVAL](./../commands/eval).
 
 ## Related Commands
 

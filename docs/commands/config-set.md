@@ -12,7 +12,7 @@ sidebar_label: __no_label
 
 ## Description
 
-The CONFIG SET command is used to set special configuration properties.  These properties will not persist until the [CONFIG REWRITE](/commands/config-rewrite) is called.
+The CONFIG SET command is used to set special configuration properties.  These properties will not persist until the [CONFIG REWRITE](./../commands/config-rewrite) is called.
 
 ## Examples
 ```tile38-cli

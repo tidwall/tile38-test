@@ -12,7 +12,7 @@ sidebar_label: SETHOOK
 
 ## Description
 
-Creates a webhook which points to a [geofenced](/topics/geofencing) search. If a hook is already associated to that name, it'll be overwritten.
+Creates a webhook which points to a [geofenced](./../topics/geofencing) search. If a hook is already associated to that name, it'll be overwritten.
 
 ## Examples
 
@@ -30,9 +30,9 @@ In this example we created a webhook named `warehouse` that watches for changes 
 - **`exit`** is when an object that **was** previously in the fence has exited the area.
 - **`cross`** is when an object that **was not** previously in the fence has entered **and** exited the area.
 
-_For more information on the format of this message please see the topic on [Geofencing](/topics/geofencing)._
+_For more information on the format of this message please see the topic on [Geofencing](./../topics/geofencing)._
 
-[NEARBY](/commands/nearby), [INTERSECTS](/commands/intersects), and [WITHIN](/commands/within) are supported search types. The `FENCE` keyword must be present.
+[NEARBY](./../commands/nearby), [INTERSECTS](./../commands/intersects), and [WITHIN](./../commands/within) are supported search types. The `FENCE` keyword must be present.
 
 ## Endpoints
 

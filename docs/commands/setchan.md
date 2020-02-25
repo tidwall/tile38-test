@@ -12,7 +12,7 @@ sidebar_label: SETCHAN
 
 ## Description
 
-Creates a Pub/Sub channel which points to a [geofenced](/topics/geofencing) search. If a channel is already associated to that name, it'll be overwritten. Once the channel is created a client can then listen for events on that channel with [SUBSCRIBE](/commands/subscribe) or [PSUBSCRIBE](/commands/psubscribe).
+Creates a Pub/Sub channel which points to a [geofenced](./../topics/geofencing) search. If a channel is already associated to that name, it'll be overwritten. Once the channel is created a client can then listen for events on that channel with [SUBSCRIBE](./../commands/subscribe) or [PSUBSCRIBE](./../commands/psubscribe).
 
 ## Examples
 
@@ -30,9 +30,9 @@ In this example we created a channel named `warehouse` that watches for changes 
 - **`exit`** is when an object that **was** previously in the fence has exited the area.
 - **`cross`** is when an object that **was not** previously in the fence has entered **and** exited the area.
 
-*For more information on the format of this message please see the topic on [Geofencing](/topics/geofencing).*
+*For more information on the format of this message please see the topic on [Geofencing](./../topics/geofencing).*
 
-[NEARBY](/commands/nearby), [INTERSECTS](/commands/intersects), and [WITHIN](/commands/within) are supported search types. The `FENCE` keyword must be present.
+[NEARBY](./../commands/nearby), [INTERSECTS](./../commands/intersects), and [WITHIN](./../commands/within) are supported search types. The `FENCE` keyword must be present.
 
 ## Related Commands
 

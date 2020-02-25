@@ -12,7 +12,7 @@ sidebar_label: __no_label
 
 ## Description
 
-Evaluates a read-only Lua script. The command uses **Read-only** atomicity level and is otherwise identical to [EVAL](/commands/eval).
+Evaluates a read-only Lua script. The command uses **Read-only** atomicity level and is otherwise identical to [EVAL](./../commands/eval).
 
 ## Related Commands
 

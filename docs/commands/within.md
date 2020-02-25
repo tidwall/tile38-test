@@ -14,7 +14,7 @@ sidebar_label: WITHIN
 
 WITHIN searches a collection for objects that are fully contained inside of a specified bounding area. 
 
-[WITHIN](/commands/within) and [INTERSECTS](/commands/intersects) have identical syntax. The only difference between the two is that WITHIN returns objects that are *contained* inside an area, and intersects returns objects that are *contained or intersects* an area.
+[WITHIN](./../commands/within) and [INTERSECTS](./../commands/intersects) have identical syntax. The only difference between the two is that WITHIN returns objects that are *contained* inside an area, and intersects returns objects that are *contained or intersects* an area.
 
 This command has many options, but at it’s most simplest it may appear like.
 
@@ -26,15 +26,15 @@ Above is a search around the rectangle with the southwestern point `33.462,-112.
 
 ## Search Options
 
-For a complete list of search options please see the [INTERSECTS](/commands/intersects#search-options) command.
+For a complete list of search options please see the [INTERSECTS](./../commands/intersects#search-options) command.
 
 ## Output Formats
 
-For a complete list of output formats please see the [INTERSECTS](/commands/intersects#output-formats) command.
+For a complete list of output formats please see the [INTERSECTS](./../commands/intersects#output-formats) command.
 
 ## Area Formats
 
-For a complete list of area formats please see the [INTERSECTS](/commands/intersects#area-formats) command.
+For a complete list of area formats please see the [INTERSECTS](./../commands/intersects#area-formats) command.
 
 ## Related Commands
 

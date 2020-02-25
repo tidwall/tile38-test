@@ -14,7 +14,7 @@ sidebar_label: __no_label
 
 Flushes the server cache of Lua scripts.
 
-See [EVAL](/commands/eval) for more details on Lua scripting.
+See [EVAL](./../commands/eval) for more details on Lua scripting.
 
 ## Related Commands
 

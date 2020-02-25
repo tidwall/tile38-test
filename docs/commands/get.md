@@ -23,7 +23,7 @@ Output formats:
 
 A Geohash requires a precision of 1 to 22.
 
-The **WITHFIELDS** option will also return the [fields](/commands/set#fields) that belong to the object.
+The **WITHFIELDS** option will also return the [fields](./../commands/set#fields) that belong to the object.
 Field values that are equal to zero are omitted.
 
 ## Examples
