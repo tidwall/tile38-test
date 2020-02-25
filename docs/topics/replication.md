@@ -10,7 +10,7 @@ Tile38 replication is a leader-follower model and is intended to be very easy to
 
 ## Quick Tutorial
 
-Run the commands below using the [Command Line Interface](/topics/command-line-interface). On your local machine you will begin two different Tile38 server instances. The second server will follow the first server.
+Run the commands below using the [Command Line Interface](./../topics/command-line-interface). On your local machine you will begin two different Tile38 server instances. The second server will follow the first server.
 
 Open a new terminal and run:
 

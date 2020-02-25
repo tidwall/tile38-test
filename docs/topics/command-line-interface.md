@@ -6,7 +6,7 @@ sidebar_label: Command Line Interface
 
 
 
-When you [build](/#building) the `tile38-server` executable binary, an accompanied `tile38-cli` executable binary will also be built.
+When you [build](./../#building) the `tile38-server` executable binary, an accompanied `tile38-cli` executable binary will also be built.
 
 ## Basic Operations
 
@@ -29,7 +29,7 @@ $ ./tile38-cli
 > DROP fleet                                 # removes all
 ```
 
-All of the standard [commands](/commands) are supported. For inline help use the `help` command:
+All of the standard [commands](./../commands/all-commands) are supported. For inline help use the `help` command:
 
 ```plaintext
 $ ./tile38-cli

@@ -12,7 +12,7 @@ sidebar_label: __no_label
 
 ## Description
 
-Evaluates a read-only Lua script cached on the server by its SHA1 digest. Scripts are cached using the [SCRIPT LOAD](/commands/script-load) command.  The command is otherwise identical to [EVALRO](/commands/evalro).
+Evaluates a read-only Lua script cached on the server by its SHA1 digest. Scripts are cached using the [SCRIPT LOAD](./../commands/script-load) command.  The command is otherwise identical to [EVALRO](./../commands/evalro).
 
 ## Related Commands
 

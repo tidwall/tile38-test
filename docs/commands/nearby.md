@@ -29,11 +29,11 @@ then the search will be limited by that radius, in this case `6000` meters.
 
 ## Search Options
 
-For a complete list of search options please see the [INTERSECTS](/commands/intersects#search-options) command.
+For a complete list of search options please see the [INTERSECTS](./../commands/intersects#search-options) command.
 
 ## Output Formats
 
-For a complete list of output formats please see the [INTERSECTS](/commands/intersects#output-formats) command.
+For a complete list of output formats please see the [INTERSECTS](./../commands/intersects#output-formats) command.
 
 ## Related Commands
 

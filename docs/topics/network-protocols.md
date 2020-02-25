@@ -6,7 +6,7 @@ sidebar_label: Network Protocols
 
 
 
-It's recommended to use a [client library](/clients) or the [Tile38 CLI](/topics/command-line-interface), but there are times when only HTTP is available or when you need to test from a remote terminal. In those cases we provide an HTTP and telnet options.
+It's recommended to use a [client library](./../topics/client-libraries) or the [Tile38 CLI](./../topics/command-line-interface), but there are times when only HTTP is available or when you need to test from a remote terminal. In those cases we provide an HTTP and telnet options.
 
 ## HTTP
 
