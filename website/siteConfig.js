@@ -43,8 +43,7 @@ const siteConfig = {
     { blog: true, label: "Blog" },
     {
       href: "https://github.com/tidwall/tile38",
-      label: "GitHub",
-      external: true
+      label: "GitHub"
     },
     { doc: "topics/installation", label: "Get Tile38", button: true }
   ],
