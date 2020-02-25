@@ -20,7 +20,10 @@ function License(props) {
               license. Most of the Tile38 source code was written and is
               copyrighted by Josh Baker. A list of other contributors can be
               found on the{" "}
-              <a href="https://github.com/tidwall/tile38/graphs/contributors">
+              <a
+                href="https://github.com/tidwall/tile38/graphs/contributors"
+                target="_blank"
+              >
                 Github Contributors Page
               </a>
               . The Tile38 trademark and logo are copyrighted by Tile38, LLC.

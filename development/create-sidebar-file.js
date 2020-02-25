@@ -48,8 +48,8 @@ for (command of Object.keys(commands)) {
   }
 }
 
-// sort and add common commands to Common subcategory
-commonGroup.ids.sort();
+// sort commands included in All Commands file
+// ("no_label" distinction hides links in sidebar)
 noLabelCommands = ["commands/all-commands", ...noLabelCommands.sort()];
 
 categories.docs.Commands.push(commonGroup);
