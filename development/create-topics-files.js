@@ -43,6 +43,11 @@ function getTopicBody(data) {
     body = body.replace(/\/img\//g, "./../img/");
   }
 
+  // replace internal link paths that start "/" with "./../"
+  if (body.match(/\]\(\//g)) {
+    body = body.replace(/\]\(\//g, "](./../");
+  }
+
   body = "\n\n" + body + "\n";
 
   return body;
