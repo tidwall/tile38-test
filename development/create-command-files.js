@@ -165,6 +165,11 @@ function getCommandBody(fileName) {
     body = body.replace(/\/assets\/images/g, "./../img");
   }
 
+  // replace internal link paths that start "/" with "./../"
+  if (body.match(/\]\(\//g)) {
+    body = body.replace(/\]\(\//g, "](./../");
+  }
+
   // replace codeblock tag 'tile38-json' with 'json'
   if (body.match(/\`\`\`tile38-json/g)) {
     console.log("found a tile38-json match!".cyan);
