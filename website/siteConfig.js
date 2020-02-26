@@ -134,7 +134,7 @@ const siteConfig = {
   // docsSideNavCollapsible: true
 
   // Show edit button for docs
-  editUrl: "https://github.com/melbania/docusaurus-test/edit/master/docs/",
+  editUrl: "https://github.com/melbania/tile38-test/edit/master/docs/",
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
