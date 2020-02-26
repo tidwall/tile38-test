@@ -377,10 +377,6 @@ section.basic.community .cards .row div img.email {
 /********************************/
 
 /* HOME */
-.homeContainer {
-  padding-top: 10px;
-}
-
 .homeContainer .wrapper {
   padding: 0 0;
 }
@@ -483,6 +479,10 @@ div.more {
     padding-top: 25px;
   }
 
+  .homeContainer {
+    padding-top: 30px;
+  }
+
   .docsNavContainer {
     margin-top: 80px;
     position: static;
@@ -558,7 +558,7 @@ div.more {
     margin-right: 0;
   }
 
-  /* remove white space b/t log and navbar */
+  /* remove white space b/t logo and navbar */
   ul.nav-site.nav-site-internal {
     margin-top: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -566,6 +566,10 @@ div.more {
 
   ul.nav-site.nav-site-internal li {
     flex: 1 1;
+  }
+
+  div.mainContainer.homeContainer {
+    padding: 0 0;
   }
 
   .docsNavContainer {
@@ -581,6 +585,7 @@ div.more {
   .wrapper {
     padding: 0 30px;
   }
+
   .docsNavContainer .toc .navBreadcrumb {
     padding: 8px 30px;
   }
