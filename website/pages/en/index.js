@@ -305,14 +305,12 @@ class Index extends React.Component {
     };
 
     return (
-      <div>
-        <div className="mainContainer homeContainer">
-          <Hero></Hero>
-          <Geofence></Geofence>
-          <SpatialIndex></SpatialIndex>
-          <GeoEvents></GeoEvents>
-          <Community></Community>
-        </div>
+      <div className="mainContainer homeContainer">
+        <Hero></Hero>
+        <Geofence></Geofence>
+        <SpatialIndex></SpatialIndex>
+        <GeoEvents></GeoEvents>
+        <Community></Community>
       </div>
     );
   }
