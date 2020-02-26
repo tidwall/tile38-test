@@ -68,10 +68,6 @@ h3 {
   font-weight: 900;
 }
 
-h1.w400 {
-  margin-top: 0;
-}
-
 .with-love::before {
   content: "💚";
   visibility: hidden;
@@ -382,7 +378,7 @@ section.basic.community .cards .row div img.email {
 
 /* HOME */
 .homeContainer {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .homeContainer .wrapper {
