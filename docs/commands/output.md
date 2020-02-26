@@ -16,8 +16,7 @@ Gets or sets the output format for the current connection.
 
 The two possible options are [RESP](http://redis.io/topics/protocol) or [JSON](http://www.json.org).
 
-The default format is initially auto detected based on the connection type and the first command sent. Most [Clients Libraries](./../clients) will default to RESP. The [Built-in CLI](./../topics/command-line-interface/) will default to JSON.
-
+The default format is initially auto detected based on the connection type and the first command sent. Most [Client Libraries](./../topics/client-libraries) will default to RESP. The [Built-in CLI](./../topics/command-line-interface/) will default to JSON.
 
 ## Examples
 
