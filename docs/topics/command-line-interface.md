@@ -4,6 +4,8 @@ title: Command Line Interface
 sidebar_label: Command Line Interface
 ---
 
+
+
 When you [build](https://github.com/tidwall/tile38#building-tile38) the `tile38-server` executable binary, an accompanied `tile38-cli` executable binary will also be built.
 
 ## Basic Operations
