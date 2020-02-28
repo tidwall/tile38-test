@@ -440,26 +440,49 @@ code.language-tile38-cli .hljs-geojson {
 }
 
 /********************************/
-/* COMMANDS FILTER BAR PILLS
+/* COMMANDS FILTER TABS
 /********************************/
-.pill-bar {
+.commandsWrapper {
+  justify-content: center;
+}
+.commandsContainer {
+  max-width: 860px;
+}
+.tab-bar {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
-  border-radius: 0.25rem;
+  justify-content: space-between;
+  padding: 0 0;
 }
 
-.pill-bar .pill-link.active,
-.pill-bar .show > .pill-link {
+.tab-left-group {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tab-right-group {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.tab-bar .tab-link.active,
+.tab-bar .show > .tab-link {
   color: #fff;
   background-color: #007bff;
 }
 
-.pill-fill .pill-item {
-  flex: 1 1 auto;
-  text-align: center;
+li.tab-item {
+  margin-top: 0;
+  margin-right: 12px;
+}
+
+li.tab-item a {
+  color: black;
 }
 
 /********************************/
@@ -489,10 +512,21 @@ div.more {
 }
 
 @media only screen and (max-width: 736px) {
+  .nav-footer .sitemap {
+    padding: 0;
+  }
+
   div.docs,
   div.community,
   div.more {
     text-align: left;
+  }
+}
+
+@media only screen and (min-width: 765px) {
+  /* COMMANDS FILTERING CONTAINER */
+  .commandsWrapper {
+    justify-content: center;
   }
 }
 
@@ -634,6 +668,11 @@ div.more {
   .tocActive .navBreadcrumb h2 {
     opacity: 0;
     transition: visibility 0s 0.1s, opacity 0s linear;
+  }
+
+  /* COMMAND FILTER TAB */
+  .tab-right-group {
+    justify-content: flex-start;
   }
 }
 
