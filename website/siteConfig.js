@@ -8,6 +8,9 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
+const getGroups = require("./static/js/getGroups.js");
+const getCommands = require("./static/js/getCommands.js");
+
 // List of projects/orgs using your project for the users page.
 const users = [
   {
@@ -48,6 +51,10 @@ const siteConfig = {
     },
     { doc: "topics/installation", label: "Get Tile38", button: true }
   ],
+
+  // populate command groups for commands page
+  commandGroups: getGroups(),
+  allCommands: getCommands(),
 
   // If you have users set above, you add it here:
   users,
@@ -151,7 +158,9 @@ const siteConfig = {
   docsUrl: "",
 
   // wrap raw HTML fragments in pages/ with Docusaurus styles
-  wrapPagesHTML: true
+  wrapPagesHTML: true,
+
+  language: "en"
 };
 
 module.exports = siteConfig;

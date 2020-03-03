@@ -4,22 +4,28 @@ var colors = require("colors");
 const rawdata = fs.readFileSync("commands.json");
 const commands = JSON.parse(rawdata);
 
-let groups = {};
+let groups = [];
 
 for (let command of Object.keys(commands)) {
-  const thisGroup = commands[command].group;
-  if (groups[thisGroup]) {
-    groups[thisGroup] = [...groups[thisGroup], command];
-  } else {
-    groups[thisGroup] = [command];
-  }
+  const name = commands[command].group;
+  
 }
+
+// let groups = {};
+
+// for (let command of Object.keys(commands)) {
+//   const thisGroup = commands[command].group;
+//   if (groups[thisGroup]) {
+//     groups[thisGroup] = [...groups[thisGroup], command];
+//   } else {
+//     groups[thisGroup] = [command];
+//   }
+// }
 
 // for (let group in groups) {
 //   console.log(group);
 // }
 
-groups.forEach(group => console.log(group));
 // for (command of Object.keys(commands)) {
 //   const argsObj = commands[command].arguments;
 //   let argsString = command;
