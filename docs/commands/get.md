@@ -1,7 +1,7 @@
 ---
 id: get
 title: GET
-sidebar_label: GET
+sidebar_label: __no_label
 ---
 
 ## Full Syntax

@@ -14,6 +14,7 @@ const GridBlock = CompLibrary.GridBlock;
 
 class Index extends React.Component {
   render() {
+    console.log("From index.js: ", this.props);
     const { config: siteConfig, language = "" } = this.props;
     const { baseUrl } = siteConfig;
 

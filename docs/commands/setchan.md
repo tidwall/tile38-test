@@ -1,7 +1,7 @@
 ---
 id: setchan
 title: SETCHAN
-sidebar_label: SETCHAN
+sidebar_label: __no_label
 ---
 
 ## Full Syntax

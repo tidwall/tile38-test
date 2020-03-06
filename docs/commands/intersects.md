@@ -1,7 +1,7 @@
 ---
 id: intersects
 title: INTERSECTS
-sidebar_label: INTERSECTS
+sidebar_label: __no_label
 ---
 
 ## Full Syntax

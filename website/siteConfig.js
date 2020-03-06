@@ -123,10 +123,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: [
-    "https://buttons.github.io/buttons.js",
-    "/tile38-test/js/videoAutoPlay.js"
-  ],
+  scripts: ["/tile38-test/js/videoAutoPlay.js"],
 
   // On page navigation for the current documentation page.
   onPageNav: "separate",
@@ -155,12 +152,10 @@ const siteConfig = {
   repoUrl: "https://github.com/tidwall/tile38",
 
   // hide /docs/ directory in URL
-  docsUrl: "",
+  docsUrl: ""
 
   // wrap raw HTML fragments in pages/ with Docusaurus styles
-  wrapPagesHTML: true,
-
-  language: "en"
+  // wrapPagesHTML: true,
 };
 
 module.exports = siteConfig;

@@ -1,7 +1,7 @@
 ---
 id: nearby
 title: NEARBY
-sidebar_label: NEARBY
+sidebar_label: __no_label
 ---
 
 ## Full Syntax

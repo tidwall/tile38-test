@@ -1,7 +1,7 @@
 ---
 id: del
 title: DEL
-sidebar_label: DEL
+sidebar_label: __no_label
 ---
 
 ## Full Syntax

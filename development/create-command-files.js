@@ -4,17 +4,17 @@ var colors = require("colors");
 const rawdata = fs.readFileSync("commands.json");
 const commands = JSON.parse(rawdata);
 
-const commonCommands = [
-  "SET",
-  "GET",
-  "DEL",
-  "NEARBY",
-  "INTERSECTS",
-  "WITHIN",
-  "SETHOOK",
-  "SETCHAN",
-  "SUBSCRIBE"
-];
+// const commonCommands = [
+//   "SET",
+//   "GET",
+//   "DEL",
+//   "NEARBY",
+//   "INTERSECTS",
+//   "WITHIN",
+//   "SETHOOK",
+//   "SETCHAN",
+//   "SUBSCRIBE"
+// ];
 
 // write individual COMMAND files
 for (command of Object.keys(commands)) {
@@ -24,9 +24,10 @@ for (command of Object.keys(commands)) {
 
   // compose header element: id, title, sidebar_label
   const title = command;
-  const sidebar_label = commonCommands.includes(command)
-    ? command
-    : "__no_label";
+  // const sidebar_label = commonCommands.includes(command)
+  //   ? command
+  //   : "__no_label";
+  const sidebar_label = "__no_label";
   const header = getHeader(fileId, title, sidebar_label);
 
   // compose full-syntax element
@@ -44,9 +45,9 @@ for (command of Object.keys(commands)) {
 }
 
 // write ALL COMMANDS file
-const allFileId = "all-commands";
-const allTitle = "All Commands";
-const allSidebarLabel = "All Commands";
+const allFileId = "index";
+const allTitle = "Commands";
+const allSidebarLabel = "Commands";
 
 const allHeader = getHeader(allFileId, allTitle, allSidebarLabel);
 let allBody = "";

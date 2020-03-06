@@ -373,6 +373,13 @@ section.basic.community .cards .row div img.email {
 }
 
 /********************************/
+/* LEFT SIDE NAVIGATION BAR
+/********************************/
+.toc .toggleNav .navGroup .navListItem.navListItemActive {
+  font-weight: 600;
+}
+
+/********************************/
 /* MAIN DOCUMENT
 /********************************/
 
@@ -442,13 +449,16 @@ code.language-tile38-cli .hljs-geojson {
 /********************************/
 /* COMMANDS FILTER TABS
 /********************************/
-.commandsContainer {
+/* .commandsContainer {
   max-width: 860px;
-  padding-top: 0;
-}
+} */
 
-.commandsWrapper {
+/* .commandsWrapper {
   justify-content: center;
+} */
+
+.commandtable {
+  margin-bottom: 1.5em;
 }
 
 .filterbar {
@@ -460,21 +470,7 @@ code.language-tile38-cli .hljs-geojson {
   margin-bottom: 15px;
 }
 
-.filterbar .left-group {
-  flex: 1 1 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.filterbar .right-group {
-  flex: 1 1 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.commandtable .filterbar a {
+.filterbar a {
   font-size: 18px;
   margin-top: 0;
   margin-right: 12px;
@@ -483,6 +479,50 @@ code.language-tile38-cli .hljs-geojson {
 
 .filterbar a.active {
   font-weight: 700;
+}
+
+.commands-list a {
+  color: black;
+  display: flex;
+  padding: 5px 10px;
+  margin: 0 -10px;
+}
+
+.commands-list a:hover {
+  background-color: rgba(97, 135, 159, 0.15);
+}
+
+.commands-list a.command .nameargs {
+  float: left;
+}
+
+.commands-list a.command .nameargs .name {
+  color: black;
+  font-weight: 700;
+}
+
+.commands-list a:hover.command .nameargs .name {
+  color: #0d6c9b;
+}
+
+.commands-list a.command .summary {
+  float: right;
+  margin-left: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/********************************/
+/* PREV/NEXT BUTTONS
+/********************************/
+.docs-prev,
+.docs-next {
+  color: default;
+  background: default;
+  color: initial;
+  background: initial;
+  border: 1px solid #0d6c9b;
 }
 
 /********************************/

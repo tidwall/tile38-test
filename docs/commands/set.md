@@ -1,7 +1,7 @@
 ---
 id: set
 title: SET
-sidebar_label: SET
+sidebar_label: __no_label
 ---
 
 ## Full Syntax

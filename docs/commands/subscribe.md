@@ -1,7 +1,7 @@
 ---
 id: subscribe
 title: SUBSCRIBE
-sidebar_label: SUBSCRIBE
+sidebar_label: __no_label
 ---
 
 ## Full Syntax

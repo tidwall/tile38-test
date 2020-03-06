@@ -10,52 +10,31 @@ let categories = {
       "topics/command-line-interface",
       "topics/network-protocols",
       "topics/client-libraries",
-      "topics/replication"
+      "topics/replication",
+      "commands/index"
     ],
-    Geofences: ["topics/geofencing", "topics/roaming-geofences"],
-    Commands: []
+    Geofences: ["topics/geofencing", "topics/roaming-geofences"]
   }
-};
-
-let noLabelCommands = [];
-const commonCommands = [
-  "SET",
-  "GET",
-  "DEL",
-  "NEARBY",
-  "INTERSECTS",
-  "WITHIN",
-  "SETHOOK",
-  "SETCHAN",
-  "SUBSCRIBE"
-];
-
-let commonGroup = {
-  type: "subcategory",
-  label: "Common",
-  ids: []
 };
 
 const rootDir = "commands/";
-
+let noLabelCommands = [];
 // common commands pushed to commonGroup subcat, not-common commands to Commands
 for (command of Object.keys(commands)) {
   const fileId = rootDir + command.toLowerCase().replace(" ", "-");
-  if (commonCommands.includes(command)) {
-    commonGroup.ids.push(fileId);
-  } else {
-    noLabelCommands.push(fileId);
-  }
+  noLabelCommands.push(fileId);
 }
 
 // sort commands included in All Commands file
 // ("no_label" distinction hides links in sidebar)
-noLabelCommands = ["commands/all-commands", ...noLabelCommands.sort()];
+noLabelCommands = noLabelCommands.sort();
 
-categories.docs.Commands.push(commonGroup);
-categories.docs.Commands = [...categories.docs.Commands, ...noLabelCommands];
+categories.docs["Getting Started"] = [
+  ...categories.docs["Getting Started"],
+  ...noLabelCommands
+];
 
-// write content to file
+// // write content to file
 const content = JSON.stringify(categories);
 fs.writeFile(`../website/sidebars.json`, content, function(err) {
   if (err) throw err;

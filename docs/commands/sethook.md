@@ -1,7 +1,7 @@
 ---
 id: sethook
 title: SETHOOK
-sidebar_label: SETHOOK
+sidebar_label: __no_label
 ---
 
 ## Full Syntax
