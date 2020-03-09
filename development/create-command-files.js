@@ -162,11 +162,12 @@ function getCommandBody(fileName) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = "## Description\n\n" + data.slice(bodyBeginIndex).trim() + "\n";
 
-  // replace /assets/images with ./../../img/
+  // replace /assets/images with ../../img/
   // http://localhost:3000/tile38-test/commands/img/sparse-none.png
+  // https://melbania.github.io/img//sparse-none.png
   if (body.match(/\/assets\/images/g)) {
     console.log(body.match(/\/assets\/images/g).length);
-    body = body.replace(/\/assets\/images/g, "./../../img/");
+    body = body.replace(/\/assets\/images/g, "../../img/");
   }
 
   // replace internal link paths that start "/" with "../"

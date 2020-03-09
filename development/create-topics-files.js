@@ -39,12 +39,13 @@ function getTopicBody(data) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = data.slice(bodyBeginIndex).trim();
 
-  // replace /img/ with ./../../img/
+  // replace /img/ with ../../img/
   // http://localhost:3000/tile38-test/topics/img/geofence.gif
   // http://localhost:3000/tile38-test/topics/img/roaming.gif
+  // https://melbania.github.io/img/roaming.gif
   if (body.match(/\/img\//g)) {
     console.log(body.match(/\/img\//g).length);
-    body = body.replace(/\/img\//g, "./../../img/");
+    body = body.replace(/\/img\//g, "../../img/");
   }
 
   // replace internal link paths that start "/" with "../"
