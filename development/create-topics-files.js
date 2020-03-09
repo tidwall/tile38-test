@@ -6,7 +6,7 @@ const paths = [topicsPath];
 for (path of paths) {
   const files = fs.readdirSync(path);
   files.forEach(file => {
-    console.log(file.toUpperCase());
+    // console.log(file.toUpperCase());
     const data = fs.readFileSync(path + file, "utf8");
 
     // compose header element: id, title, sidebar_label
@@ -39,13 +39,23 @@ function getTopicBody(data) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = data.slice(bodyBeginIndex).trim();
 
+  // replace /img/ with ../img/
+  // http://localhost:3000/tile38-test/commands/img//sparse-none.png
+
   // replace /img/ with ../../img/
-  // http://localhost:3000/tile38-test/topics/img/geofence.gif
-  // http://localhost:3000/tile38-test/topics/img/roaming.gif
-  // https://melbania.github.io/img/roaming.gif
-  if (body.match(/\/img\//g)) {
-    console.log(body.match(/\/img\//g).length);
-    body = body.replace(/\/img\//g, "../../img/");
+  // http://localhost:3000/tile38-test/img/roaming.gif
+  // (this works on localhost!!)
+  // https://melbania.github.io/img/roaming.gif ... does not work on github)
+
+  // replace /img/ with assets/
+  // http://localhost:3000/tile38-test/topics/roaming-geofences/assets/roaming.gif
+
+  // replace /img/ with ../../assets/
+  // http://localhost:3000/tile38-test/assets/roaming.gif
+  // (this works on localhost!!)
+  http: if (body.match(/\/img\//g)) {
+    // console.log(body.match(/\/img\//g).length);
+    body = body.replace(/\/img\//g, "../../assets/");
   }
 
   // replace internal link paths that start "/" with "../"

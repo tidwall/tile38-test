@@ -19,7 +19,7 @@ const commands = JSON.parse(rawdata);
 // write individual COMMAND files
 for (command of Object.keys(commands)) {
   const fileId = command.toLowerCase().replace(" ", "-");
-  console.log(fileId.toUpperCase());
+  // console.log(fileId.toUpperCase());
   const props = commands[command];
   const group = props.group;
 
@@ -162,12 +162,23 @@ function getCommandBody(fileName) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = "## Description\n\n" + data.slice(bodyBeginIndex).trim() + "\n";
 
-  // replace /assets/images with ../../img/
-  // http://localhost:3000/tile38-test/commands/img/sparse-none.png
-  // https://melbania.github.io/img//sparse-none.png
-  if (body.match(/\/assets\/images/g)) {
-    console.log(body.match(/\/assets\/images/g).length);
-    body = body.replace(/\/assets\/images/g, "../../img/");
+  // replace /assets/images/ with ../img/
+  // http://localhost:3000/tile38-test/topics/img/roaming.gif
+
+  // replace /assets/images/ with ../../img/
+  // http://localhost:3000/tile38-test/img/roaming.gif
+  // (this works on localhost!!)
+  // https://melbania.github.io/img//sparse-none.png ... doesn't work on github
+
+  // replace /assets/images/ with ../assets/
+  // http://localhost:3000/tile38-test/commands/assets/sparse-none.png
+
+  // replace /assets/images/ with ../../assets/
+  // http://localhost:3000/tile38-test/assets/sparse-none.png
+  // (this works on localhost!!)
+  if (body.match(/\/assets\/images\//g)) {
+    // console.log(body.match(/\/assets\/images/g).length);
+    body = body.replace(/\/assets\/images\//g, "../../assets/");
   }
 
   // replace internal link paths that start "/" with "../"
