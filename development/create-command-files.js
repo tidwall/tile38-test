@@ -176,9 +176,12 @@ function getCommandBody(fileName) {
   // replace /assets/images/ with ../../assets/
   // http://localhost:3000/tile38-test/assets/sparse-none.png
   // (this works on localhost!!)
+  // https://melbania.github.io/assets/sparse-none.png ... doesn't work on github
+
+  // replace /assets/images/ with ../assets/
   if (body.match(/\/assets\/images\//g)) {
     // console.log(body.match(/\/assets\/images/g).length);
-    body = body.replace(/\/assets\/images\//g, "../../assets/");
+    body = body.replace(/\/assets\/images\//g, "../assets/");
   }
 
   // replace internal link paths that start "/" with "../"

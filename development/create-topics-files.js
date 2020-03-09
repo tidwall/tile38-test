@@ -53,10 +53,18 @@ function getTopicBody(data) {
   // replace /img/ with ../../assets/
   // http://localhost:3000/tile38-test/assets/roaming.gif
   // (this works on localhost!!)
-  http: if (body.match(/\/img\//g)) {
-    // console.log(body.match(/\/img\//g).length);
-    body = body.replace(/\/img\//g, "../../assets/");
-  }
+  // https://melbania.github.io/img/roaming.gif
+
+  // https://docusaurus.io/img/undraw_docusaurus_mountain.svg
+  // https://docusaurus.io/img/getting-started-preparation-verify.png
+
+  // replace /img/ with ../assets/
+  // if (body.match(/\/img\//g)) {
+  //   // console.log(body.match(/\/img\//g).length);
+  //   body = body.replace(/\/img\//g, "../assets/");
+  // }
+
+  // no replacement: http://localhost:3000/img/roaming.gif
 
   // replace internal link paths that start "/" with "../"
   if (body.match(/\]\(\//g)) {
