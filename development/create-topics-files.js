@@ -6,6 +6,7 @@ const paths = [topicsPath];
 for (path of paths) {
   const files = fs.readdirSync(path);
   files.forEach(file => {
+    console.log(file.toUpperCase());
     const data = fs.readFileSync(path + file, "utf8");
 
     // compose header element: id, title, sidebar_label
@@ -38,14 +39,32 @@ function getTopicBody(data) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = data.slice(bodyBeginIndex).trim();
 
-  // replace /img/ with ./../img/
+  // replace /img/ with ./../../img/
+  // http://localhost:3000/tile38-test/topics/img/geofence.gif
+  // http://localhost:3000/tile38-test/topics/img/roaming.gif
   if (body.match(/\/img\//g)) {
-    body = body.replace(/\/img\//g, "./../img/");
+    console.log(body.match(/\/img\//g).length);
+    body = body.replace(/\/img\//g, "./../../img/");
   }
 
-  // replace internal link paths that start "/" with "./../"
+  // replace internal link paths that start "/" with "../"
   if (body.match(/\]\(\//g)) {
-    body = body.replace(/\]\(\//g, "](./../");
+    body = body.replace(/\]\(\//g, "](../");
+  }
+
+  // insert '.md' file extension on relevent internal links
+  // [link text](../commandsORtopics/filenameORfile-name)
+  // [link text](../commandsORtopics/filenameORfile-name#
+  if (body.match(/\]\(\.\.\/(commands|topics)\/[a-z]+(-[a-z]+)*?(#|\))/g)) {
+    const matches = body.match(
+      /\]\(\.\.\/(commands|topics)\/[a-z]+(-[a-z]+)*?(#|\))/g
+    );
+    for (match of matches) {
+      let firstChars = match.slice(0, match.length - 1);
+      let endChar = match.slice(match.length - 1);
+      let replacement = [firstChars, ".md", endChar].join("");
+      body = body.replace(match, replacement);
+    }
   }
 
   body = "\n\n" + body + "\n";
@@ -59,6 +78,7 @@ function writeFile(name, header = null, body = null) {
 
   fs.writeFile(`../docs/topics/${name}.md`, content, function(err) {
     if (err) throw err;
+    ``;
     console.log(`${name} Saved!`);
   });
 }

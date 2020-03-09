@@ -16,7 +16,7 @@ Gets or sets the output format for the current connection.
 
 The two possible options are [RESP](http://redis.io/topics/protocol) or [JSON](http://www.json.org).
 
-The default format is initially auto detected based on the connection type and the first command sent. Most [Client Libraries](./../topics/client-libraries) will default to RESP. The [Built-in CLI](./../topics/command-line-interface/) will default to JSON.
+The default format is initially auto detected based on the connection type and the first command sent. Most [Client Libraries](../topics/client-libraries.md) will default to RESP. The [Built-in CLI](../topics/command-line-interface/) will default to JSON.
 
 ## Examples
 
@@ -27,8 +27,8 @@ OUTPUT resp          # all responses will now be in RESP format.
 
 ## Related Commands
 
-[AUTH](auth.html)<br>
-**[OUTPUT](output.html)**<br>
-[PING](ping.html)<br>
-[QUIT](quit.html)<br>
-[TIMEOUT](timeout.html)<br>
+[AUTH](../commands/auth.md)<br>
+**[OUTPUT](../commands/output.md)**<br>
+[PING](../commands/ping.md)<br>
+[QUIT](../commands/quit.md)<br>
+[TIMEOUT](../commands/timeout.md)<br>

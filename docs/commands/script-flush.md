@@ -14,16 +14,16 @@ sidebar_label: __no_label
 
 Flushes the server cache of Lua scripts.
 
-See [EVAL](./../commands/eval) for more details on Lua scripting.
+See [EVAL](../commands/eval.md) for more details on Lua scripting.
 
 ## Related Commands
 
-[EVAL](eval.html)<br>
-[EVALNA](evalna.html)<br>
-[EVALNASHA](evalnasha.html)<br>
-[EVALRO](evalro.html)<br>
-[EVALROSHA](evalrosha.html)<br>
-[EVALSHA](evalsha.html)<br>
-[SCRIPT EXISTS](script-exists.html)<br>
-**[SCRIPT FLUSH](script-flush.html)**<br>
-[SCRIPT LOAD](script-load.html)<br>
+[EVAL](../commands/eval.md)<br>
+[EVALNA](../commands/evalna.md)<br>
+[EVALNASHA](../commands/evalnasha.md)<br>
+[EVALRO](../commands/evalro.md)<br>
+[EVALROSHA](../commands/evalrosha.md)<br>
+[EVALSHA](../commands/evalsha.md)<br>
+[SCRIPT EXISTS](../commands/script-exists.md)<br>
+**[SCRIPT FLUSH](../commands/script-flush.md)**<br>
+[SCRIPT LOAD](../commands/script-load.md)<br>

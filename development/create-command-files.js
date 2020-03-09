@@ -19,6 +19,7 @@ const commands = JSON.parse(rawdata);
 // write individual COMMAND files
 for (command of Object.keys(commands)) {
   const fileId = command.toLowerCase().replace(" ", "-");
+  console.log(fileId.toUpperCase());
   const props = commands[command];
   const group = props.group;
 
@@ -161,25 +162,44 @@ function getCommandBody(fileName) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = "## Description\n\n" + data.slice(bodyBeginIndex).trim() + "\n";
 
-  // replace /assets/images with /img
+  // replace /assets/images with ./../../img/
+  // http://localhost:3000/tile38-test/commands/img/sparse-none.png
   if (body.match(/\/assets\/images/g)) {
-    body = body.replace(/\/assets\/images/g, "./../img");
+    console.log(body.match(/\/assets\/images/g).length);
+    body = body.replace(/\/assets\/images/g, "./../../img/");
   }
 
-  // replace internal link paths that start "/" with "./../"
+  // replace internal link paths that start "/" with "../"
   if (body.match(/\]\(\//g)) {
-    body = body.replace(/\]\(\//g, "](./../");
+    // console.log(body.match(/\]\(\//g).length);
+    body = body.replace(/\]\(\//g, "](../");
+  }
+
+  // insert '.md' file extension on relevent internal links
+  // [link text](../commandsORtopics/filenameORfile-name)
+  // [link text](../commandsORtopics/filenameORfile-name#
+  if (body.match(/\]\(\.\.\/(commands|topics)\/[a-z]+(-[a-z]+)*?(#|\))/g)) {
+    const matches = body.match(
+      /\]\(\.\.\/(commands|topics)\/[a-z]+(-[a-z]+)*?(#|\))/g
+    );
+    for (match of matches) {
+      let firstChars = match.slice(0, match.length - 1);
+      let endChar = match.slice(match.length - 1);
+      let replacement = [firstChars, ".md", endChar].join("");
+      // console.log(replacement);
+      body = body.replace(match, replacement);
+    }
   }
 
   // replace codeblock tag 'tile38-json' with 'json'
   if (body.match(/\`\`\`tile38-json/g)) {
-    console.log("found a tile38-json match!".cyan);
+    // console.log("found a tile38-json match!".cyan);
     body = body.replace(/\`\`\`tile38-json/g, "```json");
   }
 
   // replace codeblock tag 'tile38' with 'tile38-cli'
   if (body.match(/\`\`\`tile38/g)) {
-    console.log("found a tile38 match!".magenta);
+    // console.log("found a tile38 match!".magenta);
     body = body.replace(/\`\`\`tile38/g, "```tile38-cli");
   }
 
@@ -202,10 +222,12 @@ function getRelatedCommands(thisCommand, thisGroup, commands) {
   output += sortedCommands
     .map((command, idx) =>
       command === thisCommand
-        ? `**[${command}](${command
+        ? `**[${command}](../commands/${command
             .toLowerCase()
-            .replace(" ", "-")}.html)**<br>`
-        : `[${command}](${command.toLowerCase().replace(" ", "-")}.html)<br>`
+            .replace(" ", "-")}.md)**<br>`
+        : `[${command}](../commands/${command
+            .toLowerCase()
+            .replace(" ", "-")}.md)<br>`
     )
     .join("\n");
 

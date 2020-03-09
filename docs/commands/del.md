@@ -22,20 +22,20 @@ DEL fleet truck1
 
 ## Related Commands
 
-[BOUNDS](bounds.html)<br>
-**[DEL](del.html)**<br>
-[DROP](drop.html)<br>
-[EXPIRE](expire.html)<br>
-[FSET](fset.html)<br>
-[GET](get.html)<br>
-[JDEL](jdel.html)<br>
-[JGET](jget.html)<br>
-[JSET](jset.html)<br>
-[KEYS](keys.html)<br>
-[PDEL](pdel.html)<br>
-[PERSIST](persist.html)<br>
-[RENAME](rename.html)<br>
-[RENAMENX](renamenx.html)<br>
-[SET](set.html)<br>
-[STATS](stats.html)<br>
-[TTL](ttl.html)<br>
+[BOUNDS](../commands/bounds.md)<br>
+**[DEL](../commands/del.md)**<br>
+[DROP](../commands/drop.md)<br>
+[EXPIRE](../commands/expire.md)<br>
+[FSET](../commands/fset.md)<br>
+[GET](../commands/get.md)<br>
+[JDEL](../commands/jdel.md)<br>
+[JGET](../commands/jget.md)<br>
+[JSET](../commands/jset.md)<br>
+[KEYS](../commands/keys.md)<br>
+[PDEL](../commands/pdel.md)<br>
+[PERSIST](../commands/persist.md)<br>
+[RENAME](../commands/rename.md)<br>
+[RENAMENX](../commands/renamenx.md)<br>
+[SET](../commands/set.md)<br>
+[STATS](../commands/stats.md)<br>
+[TTL](../commands/ttl.md)<br>

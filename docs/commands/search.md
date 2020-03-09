@@ -36,8 +36,8 @@ Geo values such and POINT and OBJECT require use the SCAN command.
 
 ## Related Commands
 
-[INTERSECTS](intersects.html)<br>
-[NEARBY](nearby.html)<br>
-[SCAN](scan.html)<br>
-**[SEARCH](search.html)**<br>
-[WITHIN](within.html)<br>
+[INTERSECTS](../commands/intersects.md)<br>
+[NEARBY](../commands/nearby.md)<br>
+[SCAN](../commands/scan.md)<br>
+**[SEARCH](../commands/search.md)**<br>
+[WITHIN](../commands/within.md)<br>

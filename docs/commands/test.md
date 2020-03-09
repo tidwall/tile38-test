@@ -36,4 +36,4 @@ returns 1 if `a` intersects `b`, and 0 otherwise.  If the result is 1, then it a
 
 ## Related Commands
 
-**[TEST](test.html)**<br>
+**[TEST](../commands/test.md)**<br>

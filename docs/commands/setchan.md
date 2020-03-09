@@ -12,7 +12,7 @@ sidebar_label: __no_label
 
 ## Description
 
-Creates a Pub/Sub channel which points to a [geofenced](./../topics/geofencing) search. If a channel is already associated to that name, it'll be overwritten. Once the channel is created a client can then listen for events on that channel with [SUBSCRIBE](./../commands/subscribe) or [PSUBSCRIBE](./../commands/psubscribe).
+Creates a Pub/Sub channel which points to a [geofenced](../topics/geofencing.md) search. If a channel is already associated to that name, it'll be overwritten. Once the channel is created a client can then listen for events on that channel with [SUBSCRIBE](../commands/subscribe.md) or [PSUBSCRIBE](../commands/psubscribe.md).
 
 ## Examples
 
@@ -30,15 +30,15 @@ In this example we created a channel named `warehouse` that watches for changes 
 - **`exit`** is when an object that **was** previously in the fence has exited the area.
 - **`cross`** is when an object that **was not** previously in the fence has entered **and** exited the area.
 
-*For more information on the format of this message please see the topic on [Geofencing](./../topics/geofencing).*
+*For more information on the format of this message please see the topic on [Geofencing](../topics/geofencing.md).*
 
-[NEARBY](./../commands/nearby), [INTERSECTS](./../commands/intersects), and [WITHIN](./../commands/within) are supported search types. The `FENCE` keyword must be present.
+[NEARBY](../commands/nearby.md), [INTERSECTS](../commands/intersects.md), and [WITHIN](../commands/within.md) are supported search types. The `FENCE` keyword must be present.
 
 ## Related Commands
 
-[CHANS](chans.html)<br>
-[DELCHAN](delchan.html)<br>
-[PDELCHAN](pdelchan.html)<br>
-[PSUBSCRIBE](psubscribe.html)<br>
-**[SETCHAN](setchan.html)**<br>
-[SUBSCRIBE](subscribe.html)<br>
+[CHANS](../commands/chans.md)<br>
+[DELCHAN](../commands/delchan.md)<br>
+[PDELCHAN](../commands/pdelchan.md)<br>
+[PSUBSCRIBE](../commands/psubscribe.md)<br>
+**[SETCHAN](../commands/setchan.md)**<br>
+[SUBSCRIBE](../commands/subscribe.md)<br>

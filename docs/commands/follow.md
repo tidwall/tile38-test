@@ -23,7 +23,7 @@ FOLLOW no one             # Stop following
 
 ## Related Commands
 
-[AOF](aof.html)<br>
-[AOFMD5](aofmd5.html)<br>
-[AOFSHRINK](aofshrink.html)<br>
-**[FOLLOW](follow.html)**<br>
+[AOF](../commands/aof.md)<br>
+[AOFMD5](../commands/aofmd5.md)<br>
+[AOFSHRINK](../commands/aofshrink.md)<br>
+**[FOLLOW](../commands/follow.md)**<br>

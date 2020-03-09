@@ -99,7 +99,7 @@ class Commands extends React.Component {
             <a
               className={`command grp-${props.commands[command].group}`}
               key={`cmd-${command}`}
-              href={`${props.config.baseUrl}commands/${props.commands[command].fileName}/`}
+              href={`${props.config.baseUrl}commands/${props.commands[command].fileName}`}
             >
               <div className="nameargs">
                 <span className="name">{command}</span>

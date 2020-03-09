@@ -24,7 +24,7 @@ This will remove all hooks.
 
 ## Related Commands
 
-[DELHOOK](delhook.html)<br>
-[HOOKS](hooks.html)<br>
-**[PDELHOOK](pdelhook.html)**<br>
-[SETHOOK](sethook.html)<br>
+[DELHOOK](../commands/delhook.md)<br>
+[HOOKS](../commands/hooks.md)<br>
+**[PDELHOOK](../commands/pdelhook.md)**<br>
+[SETHOOK](../commands/sethook.md)<br>

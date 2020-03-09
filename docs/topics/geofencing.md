@@ -6,8 +6,8 @@ sidebar_label: Geofencing
 
 
 
-<img src="./../img/geofence.gif" width="200" height="200" border="0" alt="Geofence animation" align="right" style="margin-left: 10px" class="side-img">
-A [geofence](https://en.wikipedia.org/wiki/Geo-fence) is a virtual boundary that can detect when an object enters or exits the area. This boundary can be a radius or any [search area format](./../commands/intersects#area-formats), such as a [bounding box](./../topics/object-types#bounding-box), [GeoJSON](./../topics/object-types#geojson) object, etc. Tile38 can turn any standard search into a geofence monitor by adding the FENCE keyword to the search. 
+<img src="./../../img/geofence.gif" width="200" height="200" border="0" alt="Geofence animation" align="right" style="margin-left: 10px" class="side-img">
+A [geofence](https://en.wikipedia.org/wiki/Geo-fence) is a virtual boundary that can detect when an object enters or exits the area. This boundary can be a radius or any [search area format](../commands/intersects.md#area-formats), such as a [bounding box](../topics/object-types.md#bounding-box), [GeoJSON](../topics/object-types.md#geojson) object, etc. Tile38 can turn any standard search into a geofence monitor by adding the FENCE keyword to the search. 
 <br clear="all">
 
 To demonstrate, we'll use a pubsub channel to listen for geofence notifications. Open two terminals:
@@ -15,7 +15,7 @@ To demonstrate, we'll use a pubsub channel to listen for geofence notifications.
 ## Terminal 1
 
 Connect to the Tile38 server and create the geofence using the
-[`SETCHAN`](./../commands/setchan) or [`SETHOOK`](./../commands/sethook) command.
+[`SETCHAN`](../commands/setchan.md) or [`SETHOOK`](../commands/sethook.md) command.
 
 In this example we use a pubsub channel.
 

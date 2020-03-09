@@ -29,16 +29,16 @@ then the search will be limited by that radius, in this case `6000` meters.
 
 ## Search Options
 
-For a complete list of search options please see the [INTERSECTS](./../commands/intersects#search-options) command.
+For a complete list of search options please see the [INTERSECTS](../commands/intersects.md#search-options) command.
 
 ## Output Formats
 
-For a complete list of output formats please see the [INTERSECTS](./../commands/intersects#output-formats) command.
+For a complete list of output formats please see the [INTERSECTS](../commands/intersects.md#output-formats) command.
 
 ## Related Commands
 
-[INTERSECTS](intersects.html)<br>
-**[NEARBY](nearby.html)**<br>
-[SCAN](scan.html)<br>
-[SEARCH](search.html)<br>
-[WITHIN](within.html)<br>
+[INTERSECTS](../commands/intersects.md)<br>
+**[NEARBY](../commands/nearby.md)**<br>
+[SCAN](../commands/scan.md)<br>
+[SEARCH](../commands/search.md)<br>
+[WITHIN](../commands/within.md)<br>

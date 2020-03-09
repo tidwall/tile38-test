@@ -28,7 +28,7 @@ $ ./tile38-cli
 > DROP fleet                                 # removes all
 ```
 
-All of the standard [commands](/commands/all-commands) are supported. For inline help use the `help` command:
+All of the standard [commands](../commands/index) are supported. For inline help use the `help` command:
 
 ```plaintext
 $ ./tile38-cli

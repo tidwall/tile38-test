@@ -52,7 +52,7 @@ EVAL 'return tile38.call("GET", KEYS[1], ARGV[1], "POINT")' 1 mykey myid1
 2) "-115"
 ```
 
-This is useful in many ways. One reason is the potential future features involving clustering/sharding of the data.  Another immediate reason is that it is beneficial to have constant scripts into which different keys/args are sent.  This allows caching the compiled script on the server and avoid compiling new Lua code each time the script is evaluated (see [EVALSHA](./../commands/evalsha) and [SCRIPT LOAD](./../commands/script-load) for more details.)
+This is useful in many ways. One reason is the potential future features involving clustering/sharding of the data.  Another immediate reason is that it is beneficial to have constant scripts into which different keys/args are sent.  This allows caching the compiled script on the server and avoid compiling new Lua code each time the script is evaluated (see [EVALSHA](../commands/evalsha.md) and [SCRIPT LOAD](../commands/script-load.md) for more details.)
 
 The value returned by a Lua script will be converted from its Lua type to one of the types supported by RESP.
 
@@ -95,28 +95,28 @@ The Lua environment inside the Tile38 server also defines these helper functions
 ## Helper vairables
 
 * A global variable `DEADLINE` is set inside the Lua environment. Its value is either `nil` (no timeout)
-or a Unix epoch second of the deadline after which the script will be killed, if invoked with the [TIMEOUT](./../commands/timeout).
+or a Unix epoch second of the deadline after which the script will be killed, if invoked with the [TIMEOUT](../commands/timeout.md).
 
 ## Atomicity of scripts
 Tile38 provides three different levels of atomicity:
 
-* **Full**, used by [EVAL](./../commands/eval) and [EVALSHA](./../commands/evalsha):
+* **Full**, used by [EVAL](../commands/eval.md) and [EVALSHA](../commands/evalsha.md):
 No other command is running on the server during the execution ofthe script;
-* **Read-only**, used by [EVALRO](./../commands/evalro) and [EVALROSHA](./../commands/evalrosha): No write-capable command is running on the server during the execution of the script.  Other read-only commands or read-only scripts might run concurrently.
-* **None**, used by [EVALNA](./../commands/evalna) and [EVALNASHA](./../commands/evalnasha): It is possible that any command will run concurrently with the script. The usual Tile38 atomicity rules will be applied to each tile38 command, as the script calls it through `tile38.call()` or `tile38.pcall()`.
+* **Read-only**, used by [EVALRO](../commands/evalro.md) and [EVALROSHA](../commands/evalrosha.md): No write-capable command is running on the server during the execution of the script.  Other read-only commands or read-only scripts might run concurrently.
+* **None**, used by [EVALNA](../commands/evalna.md) and [EVALNASHA](../commands/evalnasha.md): It is possible that any command will run concurrently with the script. The usual Tile38 atomicity rules will be applied to each tile38 command, as the script calls it through `tile38.call()` or `tile38.pcall()`.
 
 The reason for providing different atomicity levels is that in that the users might want to pick a particular behavior depending on their use case. Examples:
 
-1. You want to avoid race conditions: check some values and depending on the result maybe set or delete some values, or read some other values.  In that case, you absolutely don't want any data changes to happen between the parts of your script.  Use **Full** atomicity: call your script through [EVAL](./../commands/eval) or [EVALSHA](./../commands/evalsha).
-2. You want to avoid race conditions, but you know your script does not make any writes itself.  In that case, you may use either **Full** or **Read-only** atomicity.  If you choose **Read-only** your script might execute faster, as it will not have to wait for all existing readers to finish first.  A **Read-only** script will also let other read-only commands or read-only scripts to run faster, as they will not have to wait for you to finish first. In other words, if your script is guaranteed to be read-only, you loose nothing and potentially gain by using **Read-only** level.  Call your script using [EVALRO](./../commands/evalro) or [EVALROSHA](./../commands/evalrosha).
-3. You are running long script such as a search with the cursor, then examining the returned values and picking the ones you like, and then getting more values from the cursor, and so on.  The reason you use a script as opposed to multiple calls from the client is that you don't want to waste time on the round trips.  At the same time, you're not concerned about race conditions.  In that case, use the **None** atomicity. In other words, call your script through [EVALNA](./../commands/evalna) or [EVALNASHA](./../commands/evalnasha).
+1. You want to avoid race conditions: check some values and depending on the result maybe set or delete some values, or read some other values.  In that case, you absolutely don't want any data changes to happen between the parts of your script.  Use **Full** atomicity: call your script through [EVAL](../commands/eval.md) or [EVALSHA](../commands/evalsha.md).
+2. You want to avoid race conditions, but you know your script does not make any writes itself.  In that case, you may use either **Full** or **Read-only** atomicity.  If you choose **Read-only** your script might execute faster, as it will not have to wait for all existing readers to finish first.  A **Read-only** script will also let other read-only commands or read-only scripts to run faster, as they will not have to wait for you to finish first. In other words, if your script is guaranteed to be read-only, you loose nothing and potentially gain by using **Read-only** level.  Call your script using [EVALRO](../commands/evalro.md) or [EVALROSHA](../commands/evalrosha.md).
+3. You are running long script such as a search with the cursor, then examining the returned values and picking the ones you like, and then getting more values from the cursor, and so on.  The reason you use a script as opposed to multiple calls from the client is that you don't want to waste time on the round trips.  At the same time, you're not concerned about race conditions.  In that case, use the **None** atomicity. In other words, call your script through [EVALNA](../commands/evalna.md) or [EVALNASHA](../commands/evalnasha.md).
 
 ## Caching and -SHA commands
 Tile38 has an internal caching mechanism that will avoid recompiling a script on every evaluation, so even if you send the same script multiple times it will only be compiled once.
 
-However, you can run scripts even more efficiently (taking less bandwidth) by using -SHA version of the commands: [EVALSHA](./../commands/evalsha), [EVALROSHA](./../commands/evalrosha), and [EVALNASHA](./../commands/evalnasha).  For each script you want to run:
+However, you can run scripts even more efficiently (taking less bandwidth) by using -SHA version of the commands: [EVALSHA](../commands/evalsha.md), [EVALROSHA](../commands/evalrosha.md), and [EVALNASHA](../commands/evalnasha.md).  For each script you want to run:
 
-1. Load that script by [SCRIPT LOAD](./../commands/script-load) command, which returns the SHA1 digest of your script.
+1. Load that script by [SCRIPT LOAD](../commands/script-load.md) command, which returns the SHA1 digest of your script.
 ```tile38-cli
 SCRIPT LOAD "return tile38.pcall('set', KEYS[1], ARGV[1], 'point', ARGV[2], ARGV[2])"
 "d8bc159162250f39654a6466a92a66215814877b"
@@ -131,9 +131,9 @@ The script caching is not persistent, meaning it will be lost when the tile38 se
 
 Commands relevant to script caching are:
 
-* [SCRIPT FLUSH](./../commands/script-flush)
-* [SCRIPT EXISTS](./../commands/script-exists)
-* [SCRIPT LOAD](./../commands/script-load)
+* [SCRIPT FLUSH](../commands/script-flush.md)
+* [SCRIPT EXISTS](../commands/script-exists.md)
+* [SCRIPT LOAD](../commands/script-load.md)
 
 ## Replication
 The changes to the tile38 data made by scripts are replicated on the command level.  In other words, when the script runs multiple commands, each command's changes will be shipped to the replicas and replayed there.
@@ -204,12 +204,12 @@ The following functions from standard Lua libraries are not available:
 
 ## Related Commands
 
-**[EVAL](eval.html)**<br>
-[EVALNA](evalna.html)<br>
-[EVALNASHA](evalnasha.html)<br>
-[EVALRO](evalro.html)<br>
-[EVALROSHA](evalrosha.html)<br>
-[EVALSHA](evalsha.html)<br>
-[SCRIPT EXISTS](script-exists.html)<br>
-[SCRIPT FLUSH](script-flush.html)<br>
-[SCRIPT LOAD](script-load.html)<br>
+**[EVAL](../commands/eval.md)**<br>
+[EVALNA](../commands/evalna.md)<br>
+[EVALNASHA](../commands/evalnasha.md)<br>
+[EVALRO](../commands/evalro.md)<br>
+[EVALROSHA](../commands/evalrosha.md)<br>
+[EVALSHA](../commands/evalsha.md)<br>
+[SCRIPT EXISTS](../commands/script-exists.md)<br>
+[SCRIPT FLUSH](../commands/script-flush.md)<br>
+[SCRIPT LOAD](../commands/script-load.md)<br>

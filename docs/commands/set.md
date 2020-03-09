@@ -76,7 +76,7 @@ SET fleet truck1 FIELD speed 90 POINT 33.5123 -112.2693
 SET fleet truck1 FIELD speed 90 FIELD age 21 POINT 33.5123 -112.2693
 ```
 
-It's also possible to set a field when an object already exists. See [FSET](./../commands/fset).
+It's also possible to set a field when an object already exists. See [FSET](../commands/fset.md).
 
 <a name="z-coordinate"></a>
 ## Z Coordinate
@@ -107,7 +107,7 @@ Which will look for all points that are within 100 kilometers of 33,-115 and hav
 
 It's possible to set a raw string by using the STRING keyword.
 The value of a string type can be plain text or a series of raw bytes.
-To retrieve a string value you can use [GET](./../commands/get), [SCAN](./../commands/scan), or [SEARCH](./../commands/search).
+To retrieve a string value you can use [GET](../commands/get.md), [SCAN](../commands/scan.md), or [SEARCH](../commands/search.md).
 
 ```tile38-cli
 SET fleet truck1:driver STRING "John Denton"
@@ -115,20 +115,20 @@ SET fleet truck1:driver STRING "John Denton"
 
 ## Related Commands
 
-[BOUNDS](bounds.html)<br>
-[DEL](del.html)<br>
-[DROP](drop.html)<br>
-[EXPIRE](expire.html)<br>
-[FSET](fset.html)<br>
-[GET](get.html)<br>
-[JDEL](jdel.html)<br>
-[JGET](jget.html)<br>
-[JSET](jset.html)<br>
-[KEYS](keys.html)<br>
-[PDEL](pdel.html)<br>
-[PERSIST](persist.html)<br>
-[RENAME](rename.html)<br>
-[RENAMENX](renamenx.html)<br>
-**[SET](set.html)**<br>
-[STATS](stats.html)<br>
-[TTL](ttl.html)<br>
+[BOUNDS](../commands/bounds.md)<br>
+[DEL](../commands/del.md)<br>
+[DROP](../commands/drop.md)<br>
+[EXPIRE](../commands/expire.md)<br>
+[FSET](../commands/fset.md)<br>
+[GET](../commands/get.md)<br>
+[JDEL](../commands/jdel.md)<br>
+[JGET](../commands/jget.md)<br>
+[JSET](../commands/jset.md)<br>
+[KEYS](../commands/keys.md)<br>
+[PDEL](../commands/pdel.md)<br>
+[PERSIST](../commands/persist.md)<br>
+[RENAME](../commands/rename.md)<br>
+[RENAMENX](../commands/renamenx.md)<br>
+**[SET](../commands/set.md)**<br>
+[STATS](../commands/stats.md)<br>
+[TTL](../commands/ttl.md)<br>

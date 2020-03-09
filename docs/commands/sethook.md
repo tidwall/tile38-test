@@ -12,7 +12,7 @@ sidebar_label: __no_label
 
 ## Description
 
-Creates a webhook which points to a [geofenced](./../topics/geofencing) search. If a hook is already associated to that name, it'll be overwritten.
+Creates a webhook which points to a [geofenced](../topics/geofencing.md) search. If a hook is already associated to that name, it'll be overwritten.
 
 ## Examples
 
@@ -30,9 +30,9 @@ In this example we created a webhook named `warehouse` that watches for changes 
 - **`exit`** is when an object that **was** previously in the fence has exited the area.
 - **`cross`** is when an object that **was not** previously in the fence has entered **and** exited the area.
 
-_For more information on the format of this message please see the topic on [Geofencing](./../topics/geofencing)._
+_For more information on the format of this message please see the topic on [Geofencing](../topics/geofencing.md)._
 
-[NEARBY](./../commands/nearby), [INTERSECTS](./../commands/intersects), and [WITHIN](./../commands/within) are supported search types. The `FENCE` keyword must be present.
+[NEARBY](../commands/nearby.md), [INTERSECTS](../commands/intersects.md), and [WITHIN](../commands/within.md) are supported search types. The `FENCE` keyword must be present.
 
 ## Endpoints
 
@@ -203,7 +203,7 @@ Tile38 will try to send a message to the first endpoint. If the send is a failur
 
 ## Related Commands
 
-[DELHOOK](delhook.html)<br>
-[HOOKS](hooks.html)<br>
-[PDELHOOK](pdelhook.html)<br>
-**[SETHOOK](sethook.html)**<br>
+[DELHOOK](../commands/delhook.md)<br>
+[HOOKS](../commands/hooks.md)<br>
+[PDELHOOK](../commands/pdelhook.md)<br>
+**[SETHOOK](../commands/sethook.md)**<br>

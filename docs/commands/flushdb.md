@@ -24,10 +24,10 @@ FLUSHDB
 
 ## Related Commands
 
-[CONFIG GET](config-get.html)<br>
-[CONFIG REWRITE](config-rewrite.html)<br>
-[CONFIG SET](config-set.html)<br>
-**[FLUSHDB](flushdb.html)**<br>
-[GC](gc.html)<br>
-[READONLY](readonly.html)<br>
-[SERVER](server.html)<br>
+[CONFIG GET](../commands/config-get.md)<br>
+[CONFIG REWRITE](../commands/config-rewrite.md)<br>
+[CONFIG SET](../commands/config-set.md)<br>
+**[FLUSHDB](../commands/flushdb.md)**<br>
+[GC](../commands/gc.md)<br>
+[READONLY](../commands/readonly.md)<br>
+[SERVER](../commands/server.md)<br>

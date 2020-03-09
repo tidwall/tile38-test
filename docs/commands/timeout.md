@@ -60,8 +60,8 @@ All others commands will ignore the timeout set on the connection.
 
 ## Related Commands
 
-[AUTH](auth.html)<br>
-[OUTPUT](output.html)<br>
-[PING](ping.html)<br>
-[QUIT](quit.html)<br>
-**[TIMEOUT](timeout.html)**<br>
+[AUTH](../commands/auth.md)<br>
+[OUTPUT](../commands/output.md)<br>
+[PING](../commands/ping.md)<br>
+[QUIT](../commands/quit.md)<br>
+**[TIMEOUT](../commands/timeout.md)**<br>

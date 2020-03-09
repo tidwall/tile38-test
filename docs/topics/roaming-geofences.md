@@ -6,9 +6,9 @@ sidebar_label: Roaming Geofences
 
 
 
-<img src="./../img/roaming.gif" width="225" height="225" border="0" alt="Roaming Geofence animation" align="right" style="margin-left: 10px" class="side-img">
+<img src="./../../img/roaming.gif" width="225" height="225" border="0" alt="Roaming Geofence animation" align="right" style="margin-left: 10px" class="side-img">
 
-Tile38 1.2 introduces a powerful new feature which allows for dynamic [geofences](./../topics/geofencing). This enables realtime monitoring for when one or more moving objects are nearby each other.
+Tile38 1.2 introduces a powerful new feature which allows for dynamic [geofences](../topics/geofencing.md). This enables realtime monitoring for when one or more moving objects are nearby each other.
 
 A couple of common use cases are:
 
@@ -78,7 +78,7 @@ NEARBY people MATCH alice FENCE ROAM people bob 100
 NEARBY people MATCH a* FENCE ROAM friends * 100
 ```
 
-And if you are using [webhooks](./../commands/sethook) you can assign this fence like such:
+And if you are using [webhooks](../commands/sethook.md) you can assign this fence like such:
 
 ```tile38-cli
 SETHOOK myhook http://10.0.1.5/hook NEARBY people FENCE ROAM people * 5000

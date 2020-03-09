@@ -24,9 +24,9 @@ Supported [glob-style patterns](https://en.wikipedia.org/wiki/Glob_(programming)
 
 ## Related Commands
 
-[CHANS](chans.html)<br>
-[DELCHAN](delchan.html)<br>
-[PDELCHAN](pdelchan.html)<br>
-**[PSUBSCRIBE](psubscribe.html)**<br>
-[SETCHAN](setchan.html)<br>
-[SUBSCRIBE](subscribe.html)<br>
+[CHANS](../commands/chans.md)<br>
+[DELCHAN](../commands/delchan.md)<br>
+[PDELCHAN](../commands/pdelchan.md)<br>
+**[PSUBSCRIBE](../commands/psubscribe.md)**<br>
+[SETCHAN](../commands/setchan.md)<br>
+[SUBSCRIBE](../commands/subscribe.md)<br>
