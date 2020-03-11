@@ -162,23 +162,7 @@ function getCommandBody(fileName) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = "## Description\n\n" + data.slice(bodyBeginIndex).trim() + "\n";
 
-  // replace /assets/images/ with ../img/
-  // http://localhost:3000/tile38-test/topics/img/roaming.gif
-
-  // replace /assets/images/ with ../../img/
-  // http://localhost:3000/tile38-test/img/roaming.gif
-  // (this works on localhost!!)
-  // https://melbania.github.io/img//sparse-none.png ... doesn't work on github
-
-  // replace /assets/images/ with ../assets/
-  // http://localhost:3000/tile38-test/commands/assets/sparse-none.png
-
-  // replace /assets/images/ with ../../assets/
-  // http://localhost:3000/tile38-test/assets/sparse-none.png
-  // (this works on localhost!!)
-  // https://melbania.github.io/assets/sparse-none.png ... doesn't work on github
-
-  // replace /assets/images/ with ../assets/
+  // replace /assets/images/ with /img/
   if (body.match(/\/assets\/images\//g)) {
     // console.log(body.match(/\/assets\/images/g).length);
     body = body.replace(/\/assets\/images\//g, "/img/");

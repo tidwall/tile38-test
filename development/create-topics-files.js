@@ -39,34 +39,6 @@ function getTopicBody(data) {
   const bodyBeginIndex = mdHeadEnd.index + 3;
   let body = data.slice(bodyBeginIndex).trim();
 
-  // replace /img/ with ../img/
-  // http://localhost:3000/tile38-test/commands/img//sparse-none.png
-
-  // replace /img/ with ../../img/
-  // http://localhost:3000/tile38-test/img/roaming.gif
-  // (this works on localhost!!)
-  // https://melbania.github.io/img/roaming.gif ... does not work on github)
-
-  // replace /img/ with assets/
-  // http://localhost:3000/tile38-test/topics/roaming-geofences/assets/roaming.gif
-
-  // replace /img/ with ../../assets/
-  // http://localhost:3000/tile38-test/assets/roaming.gif
-  // (this works on localhost!!)
-  // https://melbania.github.io/img/roaming.gif
-
-  // https://docusaurus.io/img/undraw_docusaurus_mountain.svg
-  // https://docusaurus.io/img/getting-started-preparation-verify.png
-
-  // replace /img/ with ../assets/
-  // if (body.match(/\/img\//g)) {
-  //   // console.log(body.match(/\/img\//g).length);
-  //   body = body.replace(/\/img\//g, "../assets/");
-  // }
-
-  // no replacement: http://localhost:3000/img/roaming.gif
-  // no replacement: https://melbania.github.io/assets/roaming.gif
-
   // replace internal link paths that start "/" with "../"
   if (body.match(/\]\(\//g)) {
     body = body.replace(/\]\(\//g, "](../");
