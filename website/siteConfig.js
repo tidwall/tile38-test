@@ -24,17 +24,17 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "Tile38-test", // Title for your website.
+  title: "Tile38", // Title for your website.
   tagline: "Ultra Fast Geospatial Database & Geofencing Server",
-  url: "https://melbania.github.io", // Your website URL
-  baseUrl: "/tile38-test/", // Base URL for your project */
+  url: "http://stage.tile38.com", // Your website URL
+  baseUrl: "/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: "tile38-test",
-  organizationName: "melbania",
+  projectName: "tile38-stage",
+  organizationName: "tile38",
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -123,7 +123,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ["/tile38-test/js/videoAutoPlay.js"],
+  scripts: ["/js/videoAutoPlay.js"],
 
   // On page navigation for the current documentation page.
   onPageNav: "separate",

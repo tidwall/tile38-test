@@ -181,7 +181,7 @@ function getCommandBody(fileName) {
   // replace /assets/images/ with ../assets/
   if (body.match(/\/assets\/images\//g)) {
     // console.log(body.match(/\/assets\/images/g).length);
-    body = body.replace(/\/assets\/images\//g, "../assets/");
+    body = body.replace(/\/assets\/images\//g, "/img/");
   }
 
   // replace internal link paths that start "/" with "../"

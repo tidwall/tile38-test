@@ -65,6 +65,7 @@ function getTopicBody(data) {
   // }
 
   // no replacement: http://localhost:3000/img/roaming.gif
+  // no replacement: https://melbania.github.io/assets/roaming.gif
 
   // replace internal link paths that start "/" with "../"
   if (body.match(/\]\(\//g)) {
