@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**SUBSCRIBE  channel [channel...]**
+**SUBSCRIBE channel [channel...]**
 
 ---
 

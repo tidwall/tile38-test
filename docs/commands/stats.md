@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**STATS  key [key...]**
+**STATS key [key...]**
 
 ---
 

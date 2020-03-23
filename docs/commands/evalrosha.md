@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**EVALROSHA  script numkeys [key ...] [arg ...]**
+**EVALROSHA script numkeys [key ...] [arg ...]**
 
 ---
 

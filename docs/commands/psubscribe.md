@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**PSUBSCRIBE  pattern [pattern...]**
+**PSUBSCRIBE pattern [pattern...]**
 
 ---
 

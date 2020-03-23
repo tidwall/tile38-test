@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**AOFMD5  pos size**
+**AOFMD5 pos size**
 
 ---
 

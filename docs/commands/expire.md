@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**EXPIRE  key id seconds**
+**EXPIRE key id seconds**
 
 ---
 

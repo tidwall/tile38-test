@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**PDEL  key pattern**
+**PDEL key pattern**
 
 ---
 

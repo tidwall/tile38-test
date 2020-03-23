@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**FSET  key id [XX] field value [field value ...]**
+**FSET key id [XX] field value [field value ...]**
 
 ---
 

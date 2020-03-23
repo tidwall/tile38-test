@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**JDEL  key id path**
+**JDEL key id path**
 
 ---
 

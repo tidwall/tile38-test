@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**HOOKS  pattern**
+**HOOKS pattern**
 
 ---
 

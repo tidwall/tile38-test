@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**JGET  key id path [RAW]**
+**JGET key id path [RAW]**
 
 ---
 

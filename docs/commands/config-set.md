@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**CONFIG SET  parameter [value]**
+**CONFIG SET parameter [value]**
 
 ---
 

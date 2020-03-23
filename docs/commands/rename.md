@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**RENAME  key newkey**
+**RENAME key newkey**
 
 ---
 

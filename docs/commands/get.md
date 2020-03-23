@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**GET  key id [WITHFIELDS] [OBJECT|POINT|BOUNDS|(HASH geohash)]**
+**GET key id [WITHFIELDS] [OBJECT|POINT|BOUNDS|(HASH geohash)]**
 
 ---
 

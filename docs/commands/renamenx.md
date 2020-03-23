@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**RENAMENX  key newkey**
+**RENAMENX key newkey**
 
 ---
 

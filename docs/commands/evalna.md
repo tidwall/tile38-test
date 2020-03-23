@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**EVALNA  script numkeys [key ...] [arg ...]**
+**EVALNA script numkeys [key ...] [arg ...]**
 
 ---
 

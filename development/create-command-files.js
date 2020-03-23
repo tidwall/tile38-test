@@ -150,7 +150,7 @@ function getSyntax(command, args) {
     });
     argString;
   }
-  argString = `**${command} ${argString}**`;
+  argString = `**${command}${argString ? argString : ""}**`;
   argString = `## Full Syntax\n\n${argString}\n\n---\n\n`;
   return argString;
 }

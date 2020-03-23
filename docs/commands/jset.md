@@ -6,7 +6,7 @@ sidebar_label: __no_label
 
 ## Full Syntax
 
-**JSET  key id path value [RAW|STR]**
+**JSET key id path value [RAW|STR]**
 
 ---
 
