@@ -83,7 +83,6 @@ class Commands extends React.Component {
             className={`link-${groupName === "all" ? "" : groupName}`}
             key={`link-${groupName}`}
             href={`#${groupName === "all" ? "" : groupName}`}
-            onClick={() => this.handleClick(groupName)}
           >
             {groupName[0].toUpperCase() + groupName.slice(1)}
           </a>
