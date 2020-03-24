@@ -406,6 +406,10 @@ a.tile38NavButton.solid:hover {
   padding-top: 80px;
 }
 
+.postHeaderTitle {
+  font-weight: 700;
+}
+
 /* BLOG */
 .blogContainer {
   padding-top: 90px;
