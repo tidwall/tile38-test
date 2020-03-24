@@ -552,6 +552,9 @@ div.more {
 }
 
 @media only screen and (max-width: 736px) {
+  .toggleNav h2 i {
+    font-style: normal;
+  }
   .nav-footer .sitemap {
     padding: 0;
   }
