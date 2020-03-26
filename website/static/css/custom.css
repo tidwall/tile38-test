@@ -668,8 +668,12 @@ div.more {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
-  ul.nav-site.nav-site-internal li {
+  /* ul.nav-site.nav-site-internal li {
     flex: 1 1;
+  } */
+
+  .navigationSlider .slidingNav ul li a {
+    padding: 0;
   }
 
   div.mainContainer.homeContainer {

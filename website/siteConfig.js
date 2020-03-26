@@ -44,7 +44,7 @@ const siteConfig = {
     { page: "commands", label: "Commands" },
     { doc: "topics/installation", label: "Docs" },
     { page: "license", label: "License" },
-    { blog: true, label: "Blog" },
+    // { blog: true, label: "Blog" },
     {
       href: "https://github.com/tidwall/tile38",
       label: "GitHub"
