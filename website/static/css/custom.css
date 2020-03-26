@@ -503,6 +503,7 @@ code.language-tile38-cli .hljs-geojson {
 .commands-list a.command .nameargs .name {
   color: black;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .commands-list a:hover.command .nameargs .name {
