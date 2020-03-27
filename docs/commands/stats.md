@@ -4,11 +4,9 @@ title: STATS
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **STATS key [key...]**
-
----
 
 ## Description
 

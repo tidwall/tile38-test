@@ -4,11 +4,9 @@ title: DELCHAN
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **DELCHAN name**
-
----
 
 ## Description
 

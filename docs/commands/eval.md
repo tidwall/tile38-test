@@ -4,11 +4,9 @@ title: EVAL
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **EVAL script numkeys [key ...] [arg ...]**
-
----
 
 ## Description
 

@@ -4,11 +4,9 @@ title: EXPIRE
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **EXPIRE key id seconds**
-
----
 
 ## Description
 

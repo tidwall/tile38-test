@@ -4,11 +4,9 @@ title: EVALROSHA
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **EVALROSHA script numkeys [key ...] [arg ...]**
-
----
 
 ## Description
 

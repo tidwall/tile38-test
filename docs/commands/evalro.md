@@ -4,11 +4,9 @@ title: EVALRO
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **EVALRO script numkeys [key ...] [arg ...]**
-
----
 
 ## Description
 

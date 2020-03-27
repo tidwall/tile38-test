@@ -4,11 +4,9 @@ title: PDELHOOK
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **PDELHOOK pattern**
-
----
 
 ## Description
 

@@ -4,11 +4,9 @@ title: CONFIG REWRITE
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **CONFIG REWRITE**
-
----
 
 ## Description
 

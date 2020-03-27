@@ -4,11 +4,9 @@ title: SETCHAN
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SETCHAN name [META name value ...] [EX seconds] NEARBY|WITHIN|INTERSECTS key FENCE [DETECT what] [COMMANDS which] param [param...]**
-
----
 
 ## Description
 

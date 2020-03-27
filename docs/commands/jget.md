@@ -4,11 +4,9 @@ title: JGET
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **JGET key id path [RAW]**
-
----
 
 ## Description
 

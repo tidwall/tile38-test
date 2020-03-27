@@ -4,11 +4,9 @@ title: HOOKS
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **HOOKS pattern**
-
----
 
 ## Description
 

@@ -4,11 +4,9 @@ title: PDEL
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **PDEL key pattern**
-
----
 
 ## Description
 

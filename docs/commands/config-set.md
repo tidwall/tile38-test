@@ -4,11 +4,9 @@ title: CONFIG SET
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **CONFIG SET parameter [value]**
-
----
 
 ## Description
 

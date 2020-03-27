@@ -4,11 +4,9 @@ title: RENAME
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **RENAME key newkey**
-
----
 
 ## Description
 

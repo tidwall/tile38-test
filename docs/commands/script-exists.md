@@ -4,11 +4,9 @@ title: SCRIPT EXISTS
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SCRIPT EXISTS sha1 ...**
-
----
 
 ## Description
 

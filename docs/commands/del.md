@@ -4,11 +4,9 @@ title: DEL
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **DEL key id**
-
----
 
 ## Description
 

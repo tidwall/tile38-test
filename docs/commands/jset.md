@@ -4,11 +4,9 @@ title: JSET
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **JSET key id path value [RAW|STR]**
-
----
 
 ## Description
 

@@ -4,11 +4,9 @@ title: PSUBSCRIBE
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **PSUBSCRIBE pattern [pattern...]**
-
----
 
 ## Description
 

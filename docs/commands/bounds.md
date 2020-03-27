@@ -4,11 +4,9 @@ title: BOUNDS
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **BOUNDS key**
-
----
 
 ## Description
 

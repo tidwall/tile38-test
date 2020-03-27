@@ -4,11 +4,9 @@ title: SETHOOK
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SETHOOK name endpoint [META name value ...] [EX seconds] NEARBY|WITHIN|INTERSECTS key FENCE [DETECT what] [COMMANDS which] param [param...]**
-
----
 
 ## Description
 

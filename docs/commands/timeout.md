@@ -4,11 +4,9 @@ title: TIMEOUT
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **TIMEOUT seconds COMMAND [arg  ...]**
-
----
 
 ## Description
 

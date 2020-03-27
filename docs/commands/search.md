@@ -4,11 +4,9 @@ title: SEARCH
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SEARCH key [CURSOR start] [LIMIT count] [MATCH pattern] [ASC|DESC] [WHERE field min max ...] [WHEREIN field count value [value...] ...] [WHEREEVAL script numargs arg [arg...] ...] [WHEREEVALSHA sha1 numargs arg [arg...] ...] [NOFIELDS] [COUNT|IDS]**
-
----
 
 ## Description
 

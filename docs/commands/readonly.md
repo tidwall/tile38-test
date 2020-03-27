@@ -4,11 +4,9 @@ title: READONLY
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **READONLY yes|no**
-
----
 
 ## Description
 

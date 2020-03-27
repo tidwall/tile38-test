@@ -4,11 +4,9 @@ title: JDEL
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **JDEL key id path**
-
----
 
 ## Description
 

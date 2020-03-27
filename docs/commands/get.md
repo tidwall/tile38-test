@@ -4,11 +4,9 @@ title: GET
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **GET key id [WITHFIELDS] [OBJECT|POINT|BOUNDS|(HASH geohash)]**
-
----
 
 ## Description
 

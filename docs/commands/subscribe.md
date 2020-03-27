@@ -4,11 +4,9 @@ title: SUBSCRIBE
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SUBSCRIBE channel [channel...]**
-
----
 
 ## Description
 

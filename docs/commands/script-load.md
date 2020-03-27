@@ -4,11 +4,9 @@ title: SCRIPT LOAD
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SCRIPT LOAD script**
-
----
 
 ## Description
 

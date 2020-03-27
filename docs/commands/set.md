@@ -4,11 +4,9 @@ title: SET
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SET key id [FIELD name value ...] [EX seconds] [NX|XX] (OBJECT geojson)|(POINT lat lon z)|(BOUNDS minlat minlon maxlat maxlon)|(HASH geohash)|(STRING value)**
-
----
 
 ## Description
 

@@ -4,11 +4,9 @@ title: EVALNA
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **EVALNA script numkeys [key ...] [arg ...]**
-
----
 
 ## Description
 

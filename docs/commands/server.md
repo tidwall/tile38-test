@@ -4,11 +4,9 @@ title: SERVER
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SERVER**
-
----
 
 ## Description
 

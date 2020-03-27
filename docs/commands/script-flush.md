@@ -4,11 +4,9 @@ title: SCRIPT FLUSH
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **SCRIPT FLUSH**
-
----
 
 ## Description
 

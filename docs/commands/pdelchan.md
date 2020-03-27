@@ -4,11 +4,9 @@ title: PDELCHAN
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **PDELCHAN pattern**
-
----
 
 ## Description
 

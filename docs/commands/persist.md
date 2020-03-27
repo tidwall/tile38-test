@@ -4,11 +4,9 @@ title: PERSIST
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **PERSIST key id**
-
----
 
 ## Description
 

@@ -4,11 +4,9 @@ title: KEYS
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **KEYS pattern**
-
----
 
 ## Description
 

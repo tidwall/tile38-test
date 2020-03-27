@@ -4,11 +4,9 @@ title: FLUSHDB
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **FLUSHDB**
-
----
 
 ## Description
 

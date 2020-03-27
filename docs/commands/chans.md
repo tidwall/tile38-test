@@ -4,11 +4,9 @@ title: CHANS
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **CHANS pattern**
-
----
 
 ## Description
 

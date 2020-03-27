@@ -4,11 +4,9 @@ title: OUTPUT
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **OUTPUT [json|resp]**
-
----
 
 ## Description
 

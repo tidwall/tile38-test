@@ -4,11 +4,9 @@ title: AOF
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **AOF pos**
-
----
 
 ## Description
 

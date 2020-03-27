@@ -4,11 +4,9 @@ title: CONFIG GET
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **CONFIG GET parameter**
-
----
 
 ## Description
 

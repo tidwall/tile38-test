@@ -4,11 +4,9 @@ title: TEST
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **TEST (POINT lat lon)|(GET key id)|(BOUNDS minlat minlon maxlat maxlon)|(OBJECT geojson)|(CIRCLE lat lon meters)|(TILE x y z)|(QUADKEY quadkey)|(HASH geohash) INTERSECTS|WITHIN [CLIP] (POINT lat lon)|(GET key id)|(BOUNDS minlat minlon maxlat maxlon)|(OBJECT geojson)|(CIRCLE lat lon meters)|(TILE x y z)|(QUADKEY quadkey)|(HASH geohash)**
-
----
 
 ## Description
 

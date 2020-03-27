@@ -4,11 +4,9 @@ title: AOFMD5
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **AOFMD5 pos size**
-
----
 
 ## Description
 

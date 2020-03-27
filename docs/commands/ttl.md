@@ -4,11 +4,9 @@ title: TTL
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **TTL key id**
-
----
 
 ## Description
 

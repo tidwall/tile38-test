@@ -4,11 +4,9 @@ title: QUIT
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **QUIT**
-
----
 
 ## Description
 

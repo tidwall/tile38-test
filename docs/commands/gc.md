@@ -4,11 +4,9 @@ title: GC
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **GC**
-
----
 
 ## Description
 

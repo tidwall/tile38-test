@@ -4,11 +4,9 @@ title: EVALSHA
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **EVALSHA sha1 numkeys [key ...] [arg ...]**
-
----
 
 ## Description
 

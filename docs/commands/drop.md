@@ -4,11 +4,9 @@ title: DROP
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **DROP key**
-
----
 
 ## Description
 

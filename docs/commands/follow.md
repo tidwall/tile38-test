@@ -4,11 +4,9 @@ title: FOLLOW
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **FOLLOW host port**
-
----
 
 ## Description
 

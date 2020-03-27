@@ -4,11 +4,9 @@ title: FSET
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **FSET key id [XX] field value [field value ...]**
-
----
 
 ## Description
 

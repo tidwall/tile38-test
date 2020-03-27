@@ -4,11 +4,9 @@ title: DELHOOK
 sidebar_label: __no_label
 ---
 
-## Full Syntax
+## Syntax
 
 **DELHOOK name**
-
----
 
 ## Description
 
