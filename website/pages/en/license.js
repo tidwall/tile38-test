@@ -6,7 +6,7 @@ const Container = CompLibrary.Container;
 function License(props) {
   return (
     <div className="docMainWrapper wrapper">
-      <Container className="mainContainer postContainer docsContainer">
+      <Container className="mainContainer postContainer docsContainer licenseContainer">
         <div className="post">
           <header className="postHeader">
             <h1 id="__docusaurus" className="postHeaderTitle">

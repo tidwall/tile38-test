@@ -453,14 +453,6 @@ code.language-tile38-cli .hljs-geojson {
 /********************************/
 /* COMMANDS FILTER TABS
 /********************************/
-/* .commandsContainer {
-  max-width: 860px;
-} */
-
-/* .commandsWrapper {
-  justify-content: center;
-} */
-
 .commandtable {
   margin-bottom: 1.5em;
 }
@@ -469,7 +461,6 @@ code.language-tile38-cli .hljs-geojson {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  /* justify-content: space-between; */
   padding: 0 0;
   margin-bottom: 15px;
 }
@@ -679,6 +670,11 @@ div.more {
 
   div.mainContainer.homeContainer {
     padding: 0 0;
+    margin-top: -35px;
+  }
+
+  .licenseContainer {
+    padding-top: 50px;
   }
 
   .docsNavContainer {
