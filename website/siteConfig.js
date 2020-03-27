@@ -123,7 +123,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ["/js/videoAutoPlay.js"],
+  scripts: ["/js/videoAutoPlay.js", "https://buttons.github.io/buttons.js"],
 
   // On page navigation for the current documentation page.
   onPageNav: "separate",
